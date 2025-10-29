@@ -9,6 +9,9 @@
 .start-text {
     font-size: clamp(28px, 2.6vw, 50px);
 }
+.text-outline {
+    -webkit-text-stroke: 4px black;
+}
 .active:before {
 
 }
