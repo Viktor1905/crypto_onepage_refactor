@@ -6,7 +6,11 @@
     <title>Crypto Trading Secrets</title>
     <link href="./src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Marmelad&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <style>
+
         html {
             width: 100%;
         }
@@ -15,6 +19,9 @@
             padding: 0;
             overflow-x: hidden;
             font-family: 'Inter', sans-serif;
+        }
+        .knewave {
+            font-family: 'Knewave', cursive;';
         }
     </style>
 </head>
@@ -74,33 +81,33 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <!-- Desktop Background -->
-            <img src="images/HEADER.png" alt="Crypto Trading Hero Background" class="hidden md:block w-full h-full object-cover">
-            <!-- Mobile Background - Cropped and optimized -->
-            <div class="md:hidden w-full h-full bg-cover bg-center bg-no-repeat relative" style="background-image: url('images/HEADER.png');"></div>
-        </div>
+    <section class="relative flex items-center justify-center overflow-hidden aspect-[1920/1080] bg-cover w-full" style="background-image: url('images/HEADER.png');">
+<!--        &lt;!&ndash; Background Image &ndash;&gt;-->
+<!--        <div class="absolute inset-0 z-0 ">-->
+<!--            &lt;!&ndash; Desktop Background &ndash;&gt;-->
+<!--            <img src="images/HEADER.png" alt="Crypto Trading Hero Background" class="hidden md:block w-full object-cover ">-->
+<!--            &lt;!&ndash; Mobile Background - Cropped and optimized &ndash;&gt;-->
+<!--            <div class="md:hidden w-full h-full bg-cover bg-center bg-no-repeat relative" style="background-image: url('images/HEADER.png');"></div>-->
+<!--        </div>-->
         
         <!-- Hero Content -->
-        <div class="relative z-10 w-full px-4 md:px-0">
-            <div class="grid lg:grid-cols-2 gap-12 items-center md:justify-center justify-start pl-4 md:pl-16 md:mt-20 md:mt-8">
+        <div class="z-10 w-full absolute top-[268px] inline-block">
+            <div class="items-center md:justify-center justify-start pl-4 md:pl-16 ">
                 <!-- Left Side - Main Call to Action -->
                 <div class="text-left scroll-animate-left">
-                    <h1 class="leading-none">
-                        <p class="block text-white font-normal text-[42px] md:text-[67px] uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</p>
-                        <span class="block text-lime-green font-bold text-6xl md:text-8xl uppercase tracking-wide text-shadow-black">SECRETS</span>
-                        <span class="block text-white font-normal text-[26px] md:text-[41px] uppercase tracking-wide text-shadow-lg/30">OF CRYPTO TRADING</span>
+                    <h1 class="leading-none" >
+                        <p class="block text-white font-normal text-[4.8vw]  uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</p>
+                        <span class="block text-lime-green font-bold text-[6.9vw]  uppercase tracking-wide text-shadow-black">SECRETS</span>
+                        <span class="block text-white font-normal text-[3vw] uppercase tracking-wide text-shadow-lg/30">OF CRYPTO TRADING</span>
                     </h1>
                 </div>
             </div>
-            
-            <!-- Button Container -->
-            <div class="flex items-center justify-center md:items-end md:justify-center h-32 md:h-64 ml-52 md:ml-96 mt-[20rem] md:mt-0 md:mb-10 scroll-animate-scale">
-               <button class="bg-lime-green/20 text-black border-2 border-lime-green text-2xl md:text-5xl font-bold uppercase tracking-wide px-10 md:px-16 py-2 rounded-full hover:bg-lime-green/30 transform -rotate-4 transition-transform">START</button>
-            </div>
+
         </div>
+        <!-- Button Container -->
+        <button class="absolute top-[70%] left-[54.1%] w-[16.6%] h-[7.9%] knewave bg-lime-green/20 text-black border-2 border-lime-green start-text font-bold uppercase tracking-wide rounded-full hover:bg-lime-green/30 transform -rotate-3 transition-transform">START</button>
+
+
     </section>
 
     <!-- Programs/Pricing Section -->

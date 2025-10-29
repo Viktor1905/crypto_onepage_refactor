@@ -5,7 +5,9 @@
     --color-lime-dark: #28A428;
     --font-weight-extrablack: 1000;
 }
-
+.start-text {
+    font-size: clamp(28px, 2.6vw, 50px);
+}
 .active:before {
 
 }
