@@ -27,13 +27,13 @@
 </head>
 <body class="font-sans relative bg-black text-white overflow-x-hidden max-w-[1920px]">
     <!-- Header Navigation -->
-    <header class="fixed top-0 z-50 w-full max-w-[1920px]">
+    <header id="header" class="fixed top-0 z-50 w-full max-w-[1920px] transition-opacity duration-300">
         <!-- Desktop Navigation -->
         <div class="hidden md:block w-full mx-auto pt-[35px] bg-gradient-to-b from-black/80 to-transparent">
             <div class="flex items-center justify-between h-[50px]">
                 <!-- Left Navigation -->
                 <nav class="flex items-center space-x-[63px] bg-lime-green h-full pl-[5vw] pr-[12vw] border border-lime-green rounded-r-[15px]">
-                    <a href="#" class="text-black text-base uppercase tracking-wide hover:text-gray-200 transition-colors">HOME</a>
+                    <a href="#home" class="text-black text-base uppercase tracking-wide hover:text-gray-200 transition-colors">HOME</a>
                     <a href="#" class="text-black text-base uppercase tracking-wide transition-colors">PROGRAMS</a>
                     <a href="#" class="text-black text-base uppercase tracking-wide hover:text-gray-200 transition-colors">STORE</a>
                     <a href="#" class="text-black text-base uppercase tracking-wide  px-4 py-2 border-2 border-black rounded-lg hover:text-white transition-colors">ABOUT</a>
@@ -81,13 +81,13 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative flex items-center justify-center overflow-hidden aspect-[1920/1080] bg-cover w-full" style="background-image: url('images/HEADER.png');">
+    <section id="home" class="relative flex items-center justify-center overflow-hidden aspect-[1920/1080] bg-cover w-full" style="background-image: url('images/Home-background.png');">
 <!--        &lt;!&ndash; Background Image &ndash;&gt;-->
 <!--        <div class="absolute inset-0 z-0 ">-->
 <!--            &lt;!&ndash; Desktop Background &ndash;&gt;-->
-<!--            <img src="images/HEADER.png" alt="Crypto Trading Hero Background" class="hidden md:block w-full object-cover ">-->
+<!--            <img src="images/Home-background.png" alt="Crypto Trading Hero Background" class="hidden md:block w-full object-cover ">-->
 <!--            &lt;!&ndash; Mobile Background - Cropped and optimized &ndash;&gt;-->
-<!--            <div class="md:hidden w-full h-full bg-cover bg-center bg-no-repeat relative" style="background-image: url('images/HEADER.png');"></div>-->
+<!--            <div class="md:hidden w-full h-full bg-cover bg-center bg-no-repeat relative" style="background-image: url('images/Home-background.png');"></div>-->
 <!--        </div>-->
         
         <!-- Hero Content -->
@@ -510,6 +510,8 @@
                 });
             });
         });
+
     </script>
+    <script src="src/headerOpacity.js"></script>
 </body>
 </html>
