@@ -4,12 +4,17 @@
     --color-lime-green: #CEF61B;
     --color-lime-dark: #28A428;
     --font-weight-extrablack: 1000;
+    --breakpoint-3xl: 1920px;
 }
 .start-text {
     font-size: clamp(28px, 2.6vw, 50px);
 }
 .active:before {
 
+}
+.unlock-gradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(206, 246, 27, 0.03) 15.67%, rgba(0, 0, 0, 1) 75.81%);
+    background-blend-mode: multiply;
 }
 /* Custom text shadow utilities */
 .text-shadow-sm {

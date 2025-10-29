@@ -34,9 +34,9 @@
                 <!-- Left Navigation -->
                 <nav class="flex items-center space-x-[63px] bg-lime-green h-full pl-[5vw] pr-[12vw] border border-lime-green rounded-r-[15px]">
                     <a href="#home" class="text-black text-base uppercase tracking-wide hover:text-gray-200 transition-colors">HOME</a>
-                    <a href="#" class="text-black text-base uppercase tracking-wide transition-colors">PROGRAMS</a>
-                    <a href="#" class="text-black text-base uppercase tracking-wide hover:text-gray-200 transition-colors">STORE</a>
-                    <a href="#" class="text-black text-base uppercase tracking-wide  px-4 py-2 border-2 border-black rounded-lg hover:text-white transition-colors">ABOUT</a>
+                    <a href="#programs" class="text-black text-base uppercase tracking-wide transition-colors">PROGRAMS</a>
+                    <a href="#for-whom" class="text-black text-base uppercase tracking-wide hover:text-gray-200 transition-colors">STORE</a>
+                    <a href="#about" class="text-black text-base uppercase tracking-wide  px-4 py-2 border-2 border-black rounded-lg hover:text-white transition-colors">ABOUT</a>
                 </nav>
                 
                 <!-- Right Authentication -->
@@ -81,7 +81,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative flex items-center justify-center overflow-hidden aspect-[1920/1080] bg-cover w-full" style="background-image: url('images/Home-background.png');">
+    <section id="home" class="relative flex items-center justify-center overflow-hidden w-full">
+        <!-- Background Image -->
+        <img src="images/Home-background.png" alt="Crypto Trading Hero Background"
+             class="w-full h-auto object-contain z-0">
 <!--        &lt;!&ndash; Background Image &ndash;&gt;-->
 <!--        <div class="absolute inset-0 z-0 ">-->
 <!--            &lt;!&ndash; Desktop Background &ndash;&gt;-->
@@ -96,9 +99,9 @@
                 <!-- Left Side - Main Call to Action -->
                 <div class="text-left scroll-animate-left">
                     <h1 class="leading-none" >
-                        <p class="block text-white font-normal text-[4.8vw]  uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</p>
-                        <span class="block text-lime-green font-bold text-[6.9vw]  uppercase tracking-wide text-shadow-black">SECRETS</span>
-                        <span class="block text-white font-normal text-[3vw] uppercase tracking-wide text-shadow-lg/30">OF CRYPTO TRADING</span>
+                        <p class="block text-white font-normal text-[4.8vw] 3xl:text-[93px]  uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</p>
+                        <span class="block text-lime-green font-bold text-[6.9vw] 3xl:text-[130px] uppercase tracking-wide text-shadow-black">SECRETS</span>
+                        <span class="block text-white font-normal text-[3vw] 3xl:text-[58px] uppercase tracking-wide text-shadow-lg/30">OF CRYPTO TRADING</span>
                     </h1>
                 </div>
             </div>
@@ -111,29 +114,29 @@
     </section>
 
     <!-- Programs/Pricing Section -->
-    <section class="py-20 bg-black relative overflow-hidden">
+    <section id="programs" class="bg-black relative overflow-hidden w-full">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="images/FIRST BLOCK.png" alt="Programs Background" class="w-full h-full object-cover md:opacity-75 opacity-30">
+            <img src="images/FIRST BLOCK.png" alt="Programs Background" class="w-full h-full object-cover object-top md:opacity-75 opacity-30">
         </div>
-        
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="absolute w-screen max-w-[1920px] unlock-gradient inset-0 z-10 h-[404px]">
+
+        </div>
+        <div class="relative z-10 top-0  mx-auto w-[77.8%] leading-[52px]">
             <!-- Section Title -->
-            <div class="flex flex-col items-center justify-center text-center mb-16 scroll-animate">
-                <h2 class="text-[2rem] md:text-[3rem] leading-tight">
-                    <span class="text-white font-medium uppercase tracking-wide">UNLOCK YOUR</span>
+            <div class="flex flex-col items-center pt-[5.6%] justify-center text-center mb-[95px] scroll-animate">
+                <h2 class="text-[4.5vw]">
+                    <span class="text-white font-medium uppercase 3xl:text-[86px] tracking-normal">UNLOCK YOUR</span>
                 </h2>
-                <div class="md:w-[50rem] w-96 h-0.5 bg-white mx-4"></div>
+                <div class="w-[90.6%] h-0.5 bg-white my-[31px]"></div>
                 <div class="flex items-center mt-1 justify-center text-center">
-                    <h2 class="text-lime-green text-[2.25rem] md:text-[3.25rem] font-black uppercase tracking-wide">CRYPTO</h2>
-                    <h2 class="text-white text-[2.25rem] md:text-[3.25rem] font-medium uppercase tracking-wide ml-2">POTENTIAL</h2>
+                    <h2 class="text-lime-green text-[5vw] 3xl:text-[96px] font-black uppercase tracking-normal">CRYPTO <span class="text-white">POTENTIAL</span></h2>
                 </div>
             </div>
-            
             <!-- Programs Grid -->
-            <div class="grid md:grid-cols-3 max-w-4xl md:gap-y-2 gap-y-12 md:gap-x-12 mx-auto md:px-0 px-4">
+            <div class="grid md:grid-cols-3 gap-y-2 gap-x-[105px] mx-auto md:px-0 px-4 " style="grid-template-columns: repeat(3, 28.5%);">
                 <!-- Program 1: Crypto & Blockchain - BEGINNERS -->
-                <div class="bg-black overflow-hidden transition-colors scroll-animate-scale">
+                <div class="bg-black overflow-hidden transition-colors scroll-animate-scale ">
                     <!-- Image Section -->
                     <div class="bg-gray-800 flex items-end justify-center rounded-t-lg bg-lime-green">
                         <img src="images/lorem-1.png" alt="Crypto Trading Course" class="w-auto object-contain">
@@ -262,7 +265,7 @@
     </section>
 
     <!-- For Whom Section -->
-    <section class="py-20 bg-lime-green md:px-0 px-4">
+    <section id="for-whom" class="py-20 bg-lime-green md:px-0 px-4">
         
             <!-- Section Title -->
             <div class="text-center mb-16 scroll-animate">
@@ -327,7 +330,7 @@
     </section>
 
     <!-- About Me Section -->
-    <section class="py-20 bg-black relative overflow-hidden">
+    <section id="about" class="py-20 bg-black relative overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
             <img src="images/ABOUT ME.png" alt="About Me Background" class="w-full h-full object-cover opacity-75">
