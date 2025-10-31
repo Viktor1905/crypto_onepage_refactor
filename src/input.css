@@ -19,6 +19,10 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(206, 246, 27, 0.03) 15.67%, rgba(0, 0, 0, 1) 75.81%);
     background-blend-mode: multiply;
 }
+.unlock-gradient-revert {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(206, 246, 27, 0.03) 84.33%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: multiply;
+}
 /* Custom text shadow utilities */
 .text-shadow-sm {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
