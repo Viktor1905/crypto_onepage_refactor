@@ -485,6 +485,12 @@
   .w-\[16\.6\%\] {
     width: 16.6%;
   }
+  .w-\[22\.8vw\] {
+    width: 22.8vw;
+  }
+  .w-\[22vw\] {
+    width: 22vw;
+  }
   .w-\[35px\] {
     width: 35px;
   }
@@ -533,6 +539,12 @@
   .max-w-1763 {
     max-width: calc(var(--spacing) * 1763);
   }
+  .max-w-\[22vw\] {
+    max-width: 22vw;
+  }
+  .max-w-\[72\.4vw\] {
+    max-width: 72.4vw;
+  }
   .max-w-\[423px\] {
     max-width: 423px;
   }
@@ -550,6 +562,9 @@
   }
   .max-w-\[1920px\] {
     max-width: 1920px;
+  }
+  .flex-1 {
+    flex: 1;
   }
   .flex-shrink-0 {
     flex-shrink: 0;
