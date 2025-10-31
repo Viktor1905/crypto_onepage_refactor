@@ -5,6 +5,8 @@
     --color-lime-dark: #28A428;
     --font-weight-extrablack: 1000;
     --breakpoint-3xl: 1920px;
+    --breakpoint-note: 1370px;
+    --breakpoint-mobile: 325px;
 }
 .start-text {
     font-size: clamp(28px, 2.6vw, 50px);
