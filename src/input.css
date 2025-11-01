@@ -8,7 +8,8 @@
     --breakpoint-note: 1370px;
     --breakpoint-tablet: 1090px;
     --breakpoint-mobile-big: 850px;
-    --breakpoint-mobile: 325px;
+    --breakpoint-mobile-mid: 550px;
+    --breakpoint-mobile: 400px;
 }
 .start-text {
     font-size: clamp(22px, 2.6vw, 50px);
