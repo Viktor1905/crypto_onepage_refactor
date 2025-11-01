@@ -1,8 +1,9 @@
 const header = document.getElementById('header');
+const mobileMenu = document.getElementById('mobile-menu');
 
 const updateHeaderOpacity = () => {
-    const scrollOpacity = window.scrollY > 50 ? 0.35 : 1;
-    header.style.opacity = scrollOpacity;
+    if(!mobileMenu.classList.contains('hidden')) return
+    header.style.opacity = window.scrollY > 50 ? 0.35 : 1;
 };
 
 window.addEventListener('scroll', updateHeaderOpacity);

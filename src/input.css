@@ -7,6 +7,7 @@
     --breakpoint-3xl: 1920px;
     --breakpoint-note: 1370px;
     --breakpoint-tablet: 1090px;
+    --breakpoint-mobile-big: 850px;
     --breakpoint-mobile: 325px;
 }
 .start-text {
