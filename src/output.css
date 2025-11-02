@@ -700,6 +700,36 @@
   .border-lime-green {
     border-color: var(--color-lime-green);
   }
+  .border-lime-green\/10 {
+    border-color: color-mix(in srgb, #CEF61B 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-lime-green) 10%, transparent);
+    }
+  }
+  .border-lime-green\/40 {
+    border-color: color-mix(in srgb, #CEF61B 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-lime-green) 40%, transparent);
+    }
+  }
+  .border-lime-green\/50 {
+    border-color: color-mix(in srgb, #CEF61B 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-lime-green) 50%, transparent);
+    }
+  }
+  .border-lime-green\/60 {
+    border-color: color-mix(in srgb, #CEF61B 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-lime-green) 60%, transparent);
+    }
+  }
+  .border-lime-green\/90 {
+    border-color: color-mix(in srgb, #CEF61B 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-lime-green) 90%, transparent);
+    }
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -716,6 +746,12 @@
     background-color: color-mix(in srgb, #CEF61B 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-lime-green) 20%, transparent);
+    }
+  }
+  .bg-lime-green\/50 {
+    background-color: color-mix(in srgb, #CEF61B 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-lime-green) 50%, transparent);
     }
   }
   .bg-transparent {
@@ -1147,6 +1183,13 @@
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-lime-green) 40%, transparent);
         }
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
       }
     }
   }
