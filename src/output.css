@@ -260,6 +260,12 @@
   .z-\[-1\] {
     z-index: -1;
   }
+  .z-\[-2\] {
+    z-index: -2;
+  }
+  .z-\[1\] {
+    z-index: 1;
+  }
   .container {
     width: 100%;
     @media (width >= 400px) {
@@ -1264,6 +1270,11 @@
       top: 170px;
     }
   }
+  .max-tablet\:mx-\[4\.4vw\] {
+    @media (width < 1090px) {
+      margin-inline: 4.4vw;
+    }
+  }
   .max-tablet\:mt-\[5vw\] {
     @media (width < 1090px) {
       margin-top: 5vw;
@@ -1685,6 +1696,31 @@
       width: 30%;
     }
   }
+  .max-mobile-mid\:max-w-\[43vw\] {
+    @media (width < 555px) {
+      max-width: 43vw;
+    }
+  }
+  .max-mobile-mid\:max-w-\[68vw\] {
+    @media (width < 555px) {
+      max-width: 68vw;
+    }
+  }
+  .max-mobile-mid\:max-w-\[70vw\] {
+    @media (width < 555px) {
+      max-width: 70vw;
+    }
+  }
+  .max-mobile-mid\:max-w-\[72\.8vw\] {
+    @media (width < 555px) {
+      max-width: 72.8vw;
+    }
+  }
+  .max-mobile-mid\:max-w-\[72vw\] {
+    @media (width < 555px) {
+      max-width: 72vw;
+    }
+  }
   .max-mobile-mid\:rounded-b-\[10px\] {
     @media (width < 555px) {
       border-bottom-right-radius: 10px;
@@ -1734,6 +1770,11 @@
   .max-mobile-mid\:text-\[12vw\] {
     @media (width < 555px) {
       font-size: 12vw;
+    }
+  }
+  .max-mobile-mid\:text-\[13vw\] {
+    @media (width < 555px) {
+      font-size: 13vw;
     }
   }
   .max-mobile-mid\:text-\[14vw\] {
