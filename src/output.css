@@ -440,6 +440,9 @@
   .w-\[16\.6\%\] {
     width: 16.6%;
   }
+  .w-\[22\%\] {
+    width: 22%;
+  }
   .w-\[22vw\] {
     width: 22vw;
   }
@@ -475,6 +478,12 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-\[\%\] {
+    max-width: %;
+  }
+  .max-w-\[80\%\] {
+    max-width: 80%;
   }
   .max-w-\[80vw\] {
     max-width: 80vw;
