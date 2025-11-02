@@ -12,7 +12,7 @@
     --breakpoint-mobile: 400px;
 }
 .start-text {
-    font-size: clamp(22px, 2.6vw, 50px);
+    font-size: clamp(22px, 2.6vw, 2.6vw);
 }
 .text-outline {
     -webkit-text-stroke: 4px black;
