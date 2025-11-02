@@ -359,20 +359,24 @@
         <div class="absolute w-screen bottom-[0px] max-w-[1920px] unlock-gradient-revert z-10 h-[257px]"></div>
 
         <div class="relative z-10  mx-auto h-max max-w-[1176px] max-note:ml-[8.3vw] max-note:mr-[7vw] max-tablet:ml-[5vw] max-tablet:mr-[4vw]">
-            <div class="flex justify-center">
+            <div class="flex justify-center max-mobile-big:items-center">
                 <!-- Left Section - Image Placeholder -->
-                <div class="relative scroll-animate-left md:border-r-4 md:border-lime-green">
+                <div class="relative scroll-animate-left md:border-r-4 md:border-lime-green max-mobile-big:hidden">
                     <div class="flex items-center md:justify-end justify-center overflow-hidden pt-[75px] pb-[105px]">
                         <img src="images/homeless-photo.png" alt="About Me" loading="lazy" class="w-[480px] object-contain rounded-l-[20px]">
                     </div>
                 </div>
                 
                 <!-- Right Section - Text Content -->
-                <div class="relative scroll-animate-right leading-[52px]">
+                <div class="relative scroll-animate-right leading-[52px] max-mobile-big:border-r-4 max-mobile-big:border-lime-green">
                     <!-- Content -->
                     <div class="flex flex-col items-start pt-[75px] pl-[78px] max-note:pl-[4.1vw]">
-                        <h2 class="text-[4.5vw] 3xl:text-[86px] font-black text-lime-green uppercase tracking-wide mb-[100px] max-note:mb-[7.3vw] ">ABOUT ME</h2>
-                        
+                        <h2 class="text-[4.5vw] 3xl:text-[86px] font-black text-lime-green uppercase tracking-wide mb-[100px] max-note:mb-[7.3vw] max-mobile-big:text-[45px]">ABOUT ME</h2>
+
+                        <!-- Mobile Section - Image Placeholder -->
+                            <img src="images/homeless-photo.png" alt="About Me" loading="lazy"
+                                 class="w-[70vw] max-w-[400px] object-contain rounded-[20px] hidden max-mobile-big:block">
+
                         <div class=" ">
                             <p class="text-white text-[20px] max-w-[612px] max-tablet:max-w-[452px]">
                                 When I first discovered cryptocurrency, I spent days learning how everything worked.<br>
