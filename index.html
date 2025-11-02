@@ -33,16 +33,16 @@
             <div class="flex items-center justify-between h-[50px] max-tablet:h-[35px] 3xl:h-[2.6vw]">
                 <!-- Left Navigation -->
                 <nav class="flex items-center space-x-[63px] bg-lime-green h-full pl-[5vw] pr-[12vw] border border-lime-green rounded-r-[15px] max-note:pl-[7.3vw] max-note:pr-[9.9vw] max-tablet:px-[20px] text-base max-tablet:text-[14px] 3xl:text-[0.8vw]">
-                    <a href="#home" class="text-black  uppercase tracking-wide hover:text-gray-200 transition-colors">HOME</a>
-                    <a href="#programs" class="text-black uppercase tracking-wide transition-colors">PROGRAMS</a>
-                    <a href="#for-whom" class="text-black uppercase tracking-wide hover:text-gray-200 transition-colors">STORE</a>
-                    <a href="#about" class="text-black uppercase tracking-wide rounded-lg hover:text-white transition-colors">ABOUT</a>
+                    <a href="#home" class="text-black  uppercase tracking-wide  transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">HOME</a>
+                    <a href="#programs" class="text-black uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">PROGRAMS</a>
+                    <a href="#for-whom" class="text-black uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">STORE</a>
+                    <a href="#about" class="text-black uppercase tracking-wide rounded-lg transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">ABOUT</a>
                 </nav>
                 
                 <!-- Right Authentication -->
                 <div class="flex items-center space-x-1 pr-[10px] max-note:pr-[27px] text-2xl max-tablet:text-base 3xl:text-[1.25vw] 3xl:pr-[1vw]">
-                    <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px] justify-center items-center flex align-center border-2 border-lime-green rounded-l-[15px] hover:bg-lime-green/10 transition-colors 3xl:h-[2.6vw] 3xl:w-[10.6vw] ">SIGN UP</a>
-                    <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px]  justify-center items-center flex border-2 border-lime-green rounded-r-[15px] hover:bg-lime-green/10 transition-colors 3xl:h-[2.6vw] 3xl:w-[10.6vw]">SIGN IN</a>
+                    <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px] justify-center items-center flex align-center border-2 border-lime-green rounded-l-[15px] hover:bg-lime-green/20 3xl:h-[2.6vw] 3xl:w-[10.6vw] transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN UP</a>
+                    <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px]  justify-center items-center flex border-2 border-lime-green rounded-r-[15px] hover:bg-lime-green/20 3xl:h-[2.6vw] 3xl:w-[10.6vw] transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN IN</a>
                 </div>
             </div>
         </div>
@@ -51,10 +51,10 @@
         <div class="hidden relative max-mobile-big:block bg-gradient-to-b from-black/80 to-transparent">
             <div class="w-full mx-auto ">
                 <div class="flex items-center justify-between ">
-                    <!-- Left Navigation - Mobile -->
-                    <nav id="mobile-left-nav" class="flex items-center space-x-4 absolute right-0 top-[8px]  bg-lime-green border border-lime-green rounded-l-[15px] transition-opacity duration-300 z-[-1]">
-                        <button id="mobile-menu-btn" class="text-black py-[13px] pr-[15px] pl-[20px]">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <!-- Mobile Burger -->
+                    <nav id="mobile-left-nav" class="flex items-center space-x-4 absolute right-0 top-[8px]  bg-lime-green border border-lime-green rounded-l-[15px] transition-opacity duration-300 z-[-1] ">
+                        <button id="mobile-menu-btn" class="text-black py-[13px] pr-[15px] pl-[20px] cursor-pointer ">
+                            <svg class="w-5 h-5 hover:scale-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
@@ -71,21 +71,21 @@
                             </p>
 
                         </div>
-                        <div id="burger-close" class="absolute top-[16px] right-[16px] h-[6.8vw] w-[6.8vw] text-end flex justify-center z-3 cursor-pointer">
-                            <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[-45deg] z-2"></span>
-                            <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[45deg] z-2"></span>
+                        <div id="burger-close" class="absolute top-[16px] right-[16px] h-[6.8vw] w-[6.8vw] text-end flex justify-center z-3 cursor-pointer     hover:invert">
+                            <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[-45deg] z-2 "></span>
+                            <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[45deg] z-2 "></span>
                         </div>
                     </div>
-                    <nav class="flex flex-col space-y-[20px] py-[18vh] text-[5vw] justify-center text-center ">
-                        <a href="#home" class="text-black  uppercase tracking-wide hover:text-gray-200 transition-colors">HOME</a>
-                        <a href="#programs" class="text-black  uppercase tracking-wide transition-colors">PROGRAMS</a>
-                        <a href="#for-whom" class="text-black  uppercase tracking-wide hover:text-gray-200 transition-colors">STORE</a>
-                        <a href="#about" class="text-black  uppercase tracking-wide rounded-lg hover:text-white transition-colors">ABOUT</a>
+                    <nav class="flex flex-col space-y-[20px] py-[18vh] text-[5vw] items-center text-center  ">
+                        <a href="#home" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">HOME</a>
+                        <a href="#programs" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">PROGRAMS</a>
+                        <a href="#for-whom" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">STORE</a>
+                        <a href="#about" class="size-fit text-black  uppercase tracking-wide rounded-lg hover:text-white transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black ">ABOUT</a>
                     </nav>
                     <div class="flex items-center justify-center mx-auto space-x-[20px] pr-[10px] min-w-[178px] min-h-[z42px] text-[4vw]">
-                        <a href="#" class="text-black uppercase justify-center items-center flex align-center hover:bg-lime-green/10 transition-colors ">SIGN UP</a>
+                        <a href="#" class="text-black uppercase justify-center items-center flex align-center transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white ">SIGN UP</a>
                         <div class="bg-black min-h-[42px] w-[2px]"></div>
-                        <a href="#" class="text-black uppercase justify-center items-center flex  hover:bg-lime-green/10 transition-colors">SIGN IN</a>
+                        <a href="#" class="text-black uppercase justify-center items-center flex  transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN IN</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
         <div class="z-10 w-full absolute max-mobile-big:top-[8px] max-tablet:top-[170px] top-[268px] 3xl:top-[14vw] inline-block ">
             <div class="items-center md:justify-center justify-start max-mobile-big:md:pl-[12px] 3xl:!pl-[4.3vw] md:pl-16 pl-2 ">
                 <!-- Left Side - Main Call to Action -->
-                <div class="text-left scroll-animate-left max-mobile-big:mt-[10px] max-mobile-mid:mt-0 max-mobile-mid:text-[5.6vw]">
+                <div class="text-left scroll-animate-left max-mobile-big:mt-[10px] max-mobile-mid:mt-0 max-mobile-mid:text-[5.6vw] cursor-default">
                     <h1 class="leading-none" >
                         <span class="block text-white font-normal text-[4.8vw] max-mobile-big:inline max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.6vw] uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</span>
                         <span class="block text-lime-green font-bold text-[6.9vw] max-mobile-big:inline max-mobile-big:text-[5vw] max-mobile-mid:text-[7.8vw] uppercase tracking-wide text-shadow-black">SECRETS</span>
@@ -112,7 +112,7 @@
 
         </div>
         <!-- Button Container -->
-        <button class="absolute top-[70%] left-[54.1%] w-[16.6%]  max-mobile-mid:w-[30%] max-mobile-big:w-[20%]  max-mobile:w-[50%] max-mobile-big:left-[50%] max-mobile-mid:left-[43%] max-mobile:left-[32%] h-[7.9%] knewave bg-lime-green/20 text-black border-2 border-lime-green start-text font-bold uppercase tracking-wide rounded-full hover:bg-lime-green/30 transform -rotate-3 transition-transform">START</button>
+        <button class="absolute top-[70%] left-[54.1%] w-[16.6%]  max-mobile-mid:w-[30%] max-mobile-big:w-[20%]  max-mobile:w-[50%] max-mobile-big:left-[50%] max-mobile-mid:left-[43%] max-mobile:left-[32%] h-[7.9%] knewave bg-lime-green/20 text-black border-2 border-lime-green start-text font-bold uppercase tracking-wide rounded-full hover:bg-lime-green/40 transform -rotate-3 transition-transform cursor-pointer  hover:scale-[1.1]">START</button>
 
 
     </section>
@@ -145,7 +145,7 @@
                     <!-- Image Section -->
                     <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green relative">
                         <img src="images/crypto-beginners.png" alt="Crypto trading for beginners" class="w-auto object-contain rounded-[20px] 3xl:w-full">
-                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.6vw] 3xl:text-[39px] 4xl:text-[47px] text-lime-green font-black tracking-wide mb-4">Crypto & Blockchain</h3>
+                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px] text-lime-green font-black tracking-wide mb-4">Crypto & Blockchain</h3>
                     </div>
 
                     <!-- Content Section -->
@@ -190,7 +190,7 @@
                     <!-- Image Section -->
                     <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green">
                         <img src="images/crypto-trading.png" alt="Crypto Trading Course" class="w-auto object-contain rounded-[20px] 3xl:w-full">
-                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[6.5vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 ">Crypto Trading</h3>
+                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 ">Crypto Trading</h3>
                     </div>
 
                     <!-- Content Section -->
@@ -236,7 +236,7 @@
                     <!-- Image Section -->
                     <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green ">
                         <img src="images/Crypto-community.png" alt="Crypto Community" class="w-auto object-contain rounded-[20px] 3xl:w-full brightness-[0.5]">
-                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[6.5vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 brightness-[0.5]">Private Crypto</h3>
+                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 brightness-[0.5]">Private Crypto</h3>
                         <div class="absolute transform-[rotate(-12.21deg)] top-[20%] max-tablet:top-[17%] max-mobile-big:top-[25%] 3xl:top-[22%] text-center w-full">
                             <span class="text-lime-green knewave text-[4.8vw] max-mobile-big:text-[8vw] max-mobile-mid:text-[12vw] 3xl:text-[93px] 4xl:text-[125px] leading-[4.5vw]  max-mobile-big:leading-[7vw] max-mobile-mid:leading-[11vw] 3xl:leading-[88px]">COMING<br> SOON</span>
                         </div>

@@ -209,9 +209,6 @@
   .top-\[20\%\] {
     top: 20%;
   }
-  .top-\[41\%\] {
-    top: 41%;
-  }
   .top-\[70\%\] {
     top: 70%;
   }
@@ -380,6 +377,10 @@
   .inline-block {
     display: inline-block;
   }
+  .size-fit {
+    width: fit-content;
+    height: fit-content;
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
@@ -532,6 +533,9 @@
   }
   .transform-\[rotate\(-12\.21deg\)\] {
     transform: rotate(-12.21deg);
+  }
+  .cursor-default {
+    cursor: default;
   }
   .cursor-not-allowed {
     cursor: not-allowed;
@@ -1075,6 +1079,30 @@
       --tw-text-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-text-shadow-alpha), transparent);
     }
   }
+  .hover\:scale-100 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 100%;
+        --tw-scale-y: 100%;
+        --tw-scale-z: 100%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-\[1\.1\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.1;
+      }
+    }
+  }
+  .hover\:scale-\[1\.2\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.2;
+      }
+    }
+  }
   .hover\:bg-gray-800 {
     &:hover {
       @media (hover: hover) {
@@ -1092,12 +1120,32 @@
       }
     }
   }
+  .hover\:bg-lime-green\/20 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #CEF61B 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-lime-green) 20%, transparent);
+        }
+      }
+    }
+  }
   .hover\:bg-lime-green\/30 {
     &:hover {
       @media (hover: hover) {
         background-color: color-mix(in srgb, #CEF61B 30%, transparent);
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-lime-green) 30%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-lime-green\/40 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #CEF61B 40%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-lime-green) 40%, transparent);
         }
       }
     }
@@ -1113,6 +1161,31 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
+      }
+    }
+  }
+  .hover\:invert {
+    &:hover {
+      @media (hover: hover) {
+        --tw-invert: invert(100%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
+  .hover\:text-shadow-black {
+    &:hover {
+      @media (hover: hover) {
+        --tw-text-shadow-color: #000;
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-text-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-text-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .hover\:text-shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        text-shadow: 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
       }
     }
   }
@@ -1429,16 +1502,6 @@
       top: 25%;
     }
   }
-  .max-mobile-big\:top-\[45\%\] {
-    @media (width < 850px) {
-      top: 45%;
-    }
-  }
-  .max-mobile-big\:left-\[35\%\] {
-    @media (width < 850px) {
-      left: 35%;
-    }
-  }
   .max-mobile-big\:left-\[50\%\] {
     @media (width < 850px) {
       left: 50%;
@@ -1507,11 +1570,6 @@
   .max-mobile-big\:w-\[20\%\] {
     @media (width < 850px) {
       width: 20%;
-    }
-  }
-  .max-mobile-big\:w-\[40\%\] {
-    @media (width < 850px) {
-      width: 40%;
     }
   }
   .max-mobile-big\:w-full {
@@ -1610,11 +1668,6 @@
       padding-left: calc(var(--spacing) * 0);
     }
   }
-  .max-mobile-big\:\!text-\[6vw\] {
-    @media (width < 850px) {
-      font-size: 6vw !important;
-    }
-  }
   .max-mobile-big\:text-\[1\.9vw\] {
     @media (width < 850px) {
       font-size: 1.9vw;
@@ -1672,21 +1725,6 @@
       line-height: 7vw;
     }
   }
-  .max-mobile-mid\:left-\[15\%\] {
-    @media (width < 555px) {
-      left: 15%;
-    }
-  }
-  .max-mobile-mid\:left-\[18\%\] {
-    @media (width < 555px) {
-      left: 18%;
-    }
-  }
-  .max-mobile-mid\:left-\[33\%\] {
-    @media (width < 555px) {
-      left: 33%;
-    }
-  }
   .max-mobile-mid\:left-\[43\%\] {
     @media (width < 555px) {
       left: 43%;
@@ -1737,26 +1775,6 @@
       width: 30%;
     }
   }
-  .max-mobile-mid\:w-\[43\%\] {
-    @media (width < 555px) {
-      width: 43%;
-    }
-  }
-  .max-mobile-mid\:w-\[50\%\] {
-    @media (width < 555px) {
-      width: 50%;
-    }
-  }
-  .max-mobile-mid\:w-\[55\%\] {
-    @media (width < 555px) {
-      width: 55%;
-    }
-  }
-  .max-mobile-mid\:w-\[70\%\] {
-    @media (width < 555px) {
-      width: 70%;
-    }
-  }
   .max-mobile-mid\:max-w-\[68vw\] {
     @media (width < 555px) {
       max-width: 68vw;
@@ -1781,6 +1799,11 @@
   .max-mobile-mid\:text-\[3\.1vw\] {
     @media (width < 555px) {
       font-size: 3.1vw;
+    }
+  }
+  .max-mobile-mid\:text-\[5\.3vw\] {
+    @media (width < 555px) {
+      font-size: 5.3vw;
     }
   }
   .max-mobile-mid\:text-\[5\.6vw\] {
@@ -2539,6 +2562,21 @@
   inherits: false;
   initial-value: 100%;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2578,6 +2616,9 @@
       --tw-duration: initial;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
     }
   }
 }
