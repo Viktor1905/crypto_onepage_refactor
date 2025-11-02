@@ -6,7 +6,6 @@ mobileMenuBtn.addEventListener('click', function() {
     mobileMenu.classList.remove('hidden');
     document.documentElement.style.overflow = 'hidden';
 });
-
 // Close menu when clicking outside
 document.addEventListener('click', function(event) {
     if (burgerCloseBtn.contains(event.target) || event.target.tagName === 'A') {
