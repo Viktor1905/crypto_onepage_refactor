@@ -933,8 +933,14 @@
   .text-\[5vw\] {
     font-size: 5vw;
   }
+  .text-\[6\.3vw\] {
+    font-size: 6.3vw;
+  }
   .text-\[6\.9vw\] {
     font-size: 6.9vw;
+  }
+  .text-\[7\.5vw\] {
+    font-size: 7.5vw;
   }
   .text-\[7\.8vw\] {
     font-size: 7.8vw;
@@ -995,6 +1001,10 @@
   .leading-\[90\%\] {
     --tw-leading: 90%;
     line-height: 90%;
+  }
+  .leading-\[100\%\] {
+    --tw-leading: 100%;
+    line-height: 100%;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1805,6 +1815,21 @@
       font-size: 6.5vw;
     }
   }
+  .max-mobile-mid\:text-\[6\.8vw\] {
+    @media (width < 555px) {
+      font-size: 6.8vw;
+    }
+  }
+  .max-mobile-mid\:text-\[6vw\] {
+    @media (width < 555px) {
+      font-size: 6vw;
+    }
+  }
+  .max-mobile-mid\:text-\[7\.2vw\] {
+    @media (width < 555px) {
+      font-size: 7.2vw;
+    }
+  }
   .max-mobile-mid\:text-\[7\.5vw\] {
     @media (width < 555px) {
       font-size: 7.5vw;
@@ -1818,6 +1843,11 @@
   .max-mobile-mid\:text-\[7vw\] {
     @media (width < 555px) {
       font-size: 7vw;
+    }
+  }
+  .max-mobile-mid\:text-\[8vw\] {
+    @media (width < 555px) {
+      font-size: 8vw;
     }
   }
   .max-mobile-mid\:text-\[10vw\] {
