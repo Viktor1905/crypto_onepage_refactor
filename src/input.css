@@ -15,7 +15,21 @@
 .start-text {
     font-size: clamp(22px, 2.6vw, 2.6vw);
 }
-
+.nav-hover {
+    position: relative;
+}
+.nav-hover::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: -2px;
+    left: -39px;
+    width: calc(100% + 78px);
+    height: 110%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px 35px;
+}
 .text-outline {
     -webkit-text-stroke: 4px black;
     @media(max-width: 850px) {
@@ -25,9 +39,7 @@
         -webkit-text-stroke: 1.5px black;
     }
 }
-.active:before {
 
-}
 .unlock-gradient {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(206, 246, 27, 0.03) 15.67%, rgba(0, 0, 0, 1) 75.81%);
     background-blend-mode: multiply;
