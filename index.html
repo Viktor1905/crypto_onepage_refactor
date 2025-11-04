@@ -28,389 +28,389 @@
     </style>
 </head>
 <body class="font-sans relative bg-black text-white overflow-x-hidden">
-    <!-- Header Navigation -->
+<!-- Header Navigation -->
     <header id="header" class="fixed top-0 z-50 w-full transition-opacity duration-300">
-        <!-- Desktop Navigation -->
-        <div class="block max-mobile-big:hidden w-full mx-auto pt-[35px] bg-gradient-to-b from-black/80 to-transparent ">
-            <div class="flex items-center justify-between h-[50px] max-tablet:h-[35px] 3xl:h-[2.6vw]">
-                <!-- Left Navigation -->
-                <nav class="flex items-center space-x-[63px] bg-lime-green h-full pl-[5vw] pr-[12vw] border border-lime-green rounded-r-[15px] max-note:pl-[7.3vw] max-note:pr-[9.9vw] max-tablet:px-[45px] text-base max-tablet:text-[14px] 3xl:text-[0.8vw]">
-                    <a href="#home" id="home-link" class="flex h-full items-center text-black  uppercase tracking-wide  transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white nav-hover">HOME</a>
-                    <a href="#programs" id="programs-link" class="flex h-full items-center text-black uppercase tracking-wide transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">PROGRAMS</a>
-                    <a href="#for-whom" id="for-whom-link" class="flex h-full items-center text-black uppercase tracking-wide transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">STORE</a>
-                    <a href="#about" id="about-link" class="flex h-full items-center text-black uppercase tracking-wide rounded-lg transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">ABOUT</a>
+    <!-- Desktop Navigation -->
+    <div class="block max-mobile-big:hidden w-full mx-auto pt-[35px] bg-gradient-to-b from-black/80 to-transparent ">
+        <div class="flex items-center justify-between h-[50px] max-tablet:h-[35px] 3xl:h-[2.6vw]">
+            <!-- Left Navigation -->
+            <nav class="flex items-center space-x-[63px] bg-lime-green h-full pl-[5vw] pr-[12vw] border border-lime-green rounded-r-[15px] max-note:pl-[7.3vw] max-note:pr-[9.9vw] max-tablet:px-[45px] text-base max-tablet:text-[14px] 3xl:text-[0.8vw]">
+                <a href="#home" id="home-link" class="flex h-full items-center text-black  uppercase tracking-wide  transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white nav-hover">HOME</a>
+                <a href="#programs" id="programs-link" class="flex h-full items-center text-black uppercase tracking-wide transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">PROGRAMS</a>
+                <a href="#for-whom" id="for-whom-link" class="flex h-full items-center text-black uppercase tracking-wide transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">STORE</a>
+                <a href="#about" id="about-link" class="flex h-full items-center text-black uppercase tracking-wide rounded-lg transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">ABOUT</a>
+            </nav>
+
+            <!-- Right Authentication -->
+            <div class="flex items-center space-x-1 pr-[10px] max-note:pr-[27px] text-2xl max-tablet:text-base 3xl:text-[1.25vw] 3xl:pr-[1vw]">
+                <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px] justify-center items-center flex align-center border-2 border-lime-green rounded-l-[15px] hover:bg-lime-green/20 3xl:h-[2.6vw] 3xl:w-[10.6vw] transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN UP</a>
+                <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px]  justify-center items-center flex border-2 border-lime-green rounded-r-[15px] hover:bg-lime-green/20 3xl:h-[2.6vw] 3xl:w-[10.6vw] transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN IN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="hidden relative max-mobile-big:block bg-gradient-to-b from-black/80 to-transparent">
+        <div class="w-full mx-auto ">
+            <div class="flex items-center justify-between ">
+                <!-- Mobile Burger -->
+                <nav id="mobile-left-nav" class="flex items-center space-x-4 absolute right-0 top-[8px]  bg-lime-green border border-lime-green rounded-l-[15px] transition-opacity duration-300 z-[-1] ">
+                    <button id="mobile-menu-btn" class="text-black py-[13px] pr-[15px] pl-[20px] cursor-pointer ">
+                        <svg class="w-5 h-5 hover:scale-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </nav>
-                
-                <!-- Right Authentication -->
-                <div class="flex items-center space-x-1 pr-[10px] max-note:pr-[27px] text-2xl max-tablet:text-base 3xl:text-[1.25vw] 3xl:pr-[1vw]">
-                    <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px] justify-center items-center flex align-center border-2 border-lime-green rounded-l-[15px] hover:bg-lime-green/20 3xl:h-[2.6vw] 3xl:w-[10.6vw] transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN UP</a>
-                    <a href="#" class="text-lime-green uppercase tracking-wide w-[204px] h-[50px] max-tablet:w-[120px] max-tablet:h-[35px]  justify-center items-center flex border-2 border-lime-green rounded-r-[15px] hover:bg-lime-green/20 3xl:h-[2.6vw] 3xl:w-[10.6vw] transition-colors  hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN IN</a>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="fixed inset-0 overflow-y-auto hidden w-screen min-h-screen bg-lime-green border border-lime-green pt-[8px] px-[5vw]">
+                <div class="flex justify-between">
+                    <div class="text-black ">
+                        <p class=" font-normal text-[5.6vw] leading-none uppercase text-justify ">UNLOCK THE
+                            <span class="font-bold text-[7.8vw]  uppercase">SECRETS</span><br>
+                            <span class="font-normal text-[7vw]  uppercase">OF CRYPTO TRADING</span>
+                        </p>
+
+                    </div>
+                    <div id="burger-close" class="absolute top-[16px] right-[16px] h-[6.8vw] w-[6.8vw] text-end flex justify-center z-3 cursor-pointer     hover:invert">
+                        <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[-45deg] z-2 "></span>
+                        <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[45deg] z-2 "></span>
+                    </div>
+                </div>
+                <nav class="flex flex-col space-y-[20px] py-[18vh] text-[7.5vw] items-center text-center  ">
+                    <a href="#home" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">HOME</a>
+                    <a href="#programs" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">PROGRAMS</a>
+                    <a href="#for-whom" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">STORE</a>
+                    <a href="#about" class="size-fit text-black  uppercase tracking-wide rounded-lg hover:text-white transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black ">ABOUT</a>
+                </nav>
+                <div class="flex items-center justify-center mx-auto space-x-[20px] pr-[10px] min-w-[178px] min-h-[z42px] text-[6.3vw]">
+                    <a href="#" class="text-black uppercase justify-center items-center flex align-center transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white ">SIGN UP</a>
+                    <div class="bg-black min-h-[42px] w-[2px]"></div>
+                    <a href="#" class="text-black uppercase justify-center items-center flex  transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN IN</a>
                 </div>
             </div>
         </div>
-
-        <!-- Mobile Navigation -->
-        <div class="hidden relative max-mobile-big:block bg-gradient-to-b from-black/80 to-transparent">
-            <div class="w-full mx-auto ">
-                <div class="flex items-center justify-between ">
-                    <!-- Mobile Burger -->
-                    <nav id="mobile-left-nav" class="flex items-center space-x-4 absolute right-0 top-[8px]  bg-lime-green border border-lime-green rounded-l-[15px] transition-opacity duration-300 z-[-1] ">
-                        <button id="mobile-menu-btn" class="text-black py-[13px] pr-[15px] pl-[20px] cursor-pointer ">
-                            <svg class="w-5 h-5 hover:scale-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-                    </nav>
-                </div>
-                
-                <!-- Mobile Menu Dropdown -->
-                <div id="mobile-menu" class="fixed inset-0 overflow-y-auto hidden w-screen min-h-screen bg-lime-green border border-lime-green pt-[8px] px-[5vw]">
-                    <div class="flex justify-between">
-                        <div class="text-black ">
-                            <p class=" font-normal text-[5.6vw] leading-none uppercase text-justify ">UNLOCK THE
-                                <span class="font-bold text-[7.8vw]  uppercase">SECRETS</span><br>
-                                <span class="font-normal text-[7vw]  uppercase">OF CRYPTO TRADING</span>
-                            </p>
-
-                        </div>
-                        <div id="burger-close" class="absolute top-[16px] right-[16px] h-[6.8vw] w-[6.8vw] text-end flex justify-center z-3 cursor-pointer     hover:invert">
-                            <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[-45deg] z-2 "></span>
-                            <span class="block absolute border-[2px] bg-black h-[6.8vw] rounded border-black rotate-[45deg] z-2 "></span>
-                        </div>
-                    </div>
-                    <nav class="flex flex-col space-y-[20px] py-[18vh] text-[7.5vw] items-center text-center  ">
-                        <a href="#home" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">HOME</a>
-                        <a href="#programs" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">PROGRAMS</a>
-                        <a href="#for-whom" class="size-fit text-black  uppercase tracking-wide transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">STORE</a>
-                        <a href="#about" class="size-fit text-black  uppercase tracking-wide rounded-lg hover:text-white transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black ">ABOUT</a>
-                    </nav>
-                    <div class="flex items-center justify-center mx-auto space-x-[20px] pr-[10px] min-w-[178px] min-h-[z42px] text-[6.3vw]">
-                        <a href="#" class="text-black uppercase justify-center items-center flex align-center transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white ">SIGN UP</a>
-                        <div class="bg-black min-h-[42px] w-[2px]"></div>
-                        <a href="#" class="text-black uppercase justify-center items-center flex  transition-colors hover:scale-[1.2] hover:text-shadow-lg hover:text-shadow-black hover:text-white">SIGN IN</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="relative flex items-center justify-center overflow-hidden w-full max-mobile-big:h-screen">
-        <!-- Background Image -->
-        <img src="images/Home-background.webp" alt="Crypto Trading Hero Background"
-             class="w-full h-auto object-contain z-0 max-mobile-big:object-cover max-mobile-big:object-[65%] max-mobile-big:h-full">
-        <!-- Hero Content -->
-        <div class="z-10 w-full absolute max-mobile-big:top-[8px] max-tablet:top-[170px] top-[268px] 3xl:top-[14vw] inline-block ">
-            <div class="items-center md:justify-center justify-start max-mobile-big:md:pl-[12px] 3xl:!pl-[4.3vw] md:pl-16 pl-2 ">
-                <!-- Left Side - Main Call to Action -->
-                <div class="text-left scroll-animate-left max-mobile-big:mt-[10px] max-mobile-mid:mt-0 max-mobile-mid:text-[5.6vw] cursor-default">
-                    <h1 class="leading-none" >
-                        <span class="block text-white font-normal text-[4.8vw] max-mobile-big:inline max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.6vw] uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</span>
-                        <span class="block text-lime-green font-bold text-[6.9vw] max-mobile-big:inline max-mobile-big:text-[5vw] max-mobile-mid:text-[7.8vw] uppercase tracking-wide text-shadow-black">SECRETS</span>
-                        <span class="block text-white font-normal text-[3vw]  max-mobile-big:inline max-mobile-mid:block max-mobile-mid:text-[7vw] max-mobile-big:text-[3.5vw] uppercase tracking-wide text-shadow-lg/30">OF CRYPTO TRADING</span>
-                    </h1>
-                </div>
+    <!-- Background Image -->
+    <img src="images/Home-background.webp" alt="Crypto Trading Hero Background"
+         class="w-full h-auto object-contain z-0 max-mobile-big:object-cover max-mobile-big:object-[65%] max-mobile-big:h-full">
+    <!-- Hero Content -->
+    <div class="z-10 w-full absolute max-mobile-big:top-[8px] max-tablet:top-[170px] top-[268px] 3xl:top-[14vw] inline-block ">
+        <div class="items-center md:justify-center justify-start max-mobile-big:md:pl-[12px] 3xl:!pl-[4.3vw] md:pl-16 pl-2 ">
+            <!-- Left Side - Main Call to Action -->
+            <div class="text-left scroll-animate-left max-mobile-big:mt-[10px] max-mobile-mid:mt-0 max-mobile-mid:text-[5.6vw] cursor-default">
+                <h1 class="leading-none" >
+                    <span class="block text-white font-normal text-[4.8vw] max-mobile-big:inline max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.6vw] uppercase tracking-wide text-shadow-lg/30">UNLOCK THE</span>
+                    <span class="block text-lime-green font-bold text-[6.9vw] max-mobile-big:inline max-mobile-big:text-[5vw] max-mobile-mid:text-[7.8vw] uppercase tracking-wide text-shadow-black">SECRETS</span>
+                    <span class="block text-white font-normal text-[3vw]  max-mobile-big:inline max-mobile-mid:block max-mobile-mid:text-[7vw] max-mobile-big:text-[3.5vw] uppercase tracking-wide text-shadow-lg/30">OF CRYPTO TRADING</span>
+                </h1>
             </div>
-
         </div>
-        <!-- Button Container -->
-        <button class="absolute top-[70%] left-[54.1%] w-[16.6%]  max-mobile-mid:w-[30%] max-mobile-big:w-[20%]  max-mobile:w-[50%] max-mobile-big:left-[50%] max-mobile-mid:left-[43%] max-mobile:left-[32%] h-[7.9%] knewave bg-lime-green/20 text-black border-2 border-lime-green start-text font-bold uppercase tracking-wide rounded-full hover:bg-lime-green/40 transform -rotate-3 transition-transform cursor-pointer  hover:scale-[1.1]">START</button>
+
+    </div>
+    <!-- Button Container -->
+    <a href="/registration" class=" flex  justify-center items-center absolute top-[70%] left-[54.1%] w-[16.6%]  max-mobile-mid:w-[30%] max-mobile-big:w-[20%]  max-mobile:w-[50%] max-mobile-big:left-[50%] max-mobile-mid:left-[43%] max-mobile:left-[32%] h-[7.9%] knewave bg-lime-green/20 text-black border-2 border-lime-green start-text font-bold uppercase tracking-wide rounded-full hover:bg-lime-green/40 transform -rotate-3 transition-transform cursor-pointer  hover:scale-[1.1]">START</a>
 
 
     </section>
 
     <!-- Programs/Pricing Section -->
     <section id="programs" class="bg-black relative overflow-hidden w-full">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="images/FIRST-BLOCK.webp" alt="Programs Background" class="w-full h-full object-cover object-top md:opacity-75 opacity-30">
-        </div>
-        <!-- Top Gradient -->
-        <div class="absolute w-screen max-w-[full] unlock-gradient inset-0 z-10 h-[404px]"></div>
-        <!-- Bottom Gradient -->
-        <div class="absolute w-screen bottom-[0px] max-w-[full] unlock-gradient-revert z-10 h-[532px]"></div>
-        <div class="relative z-10 pb-[92px] mx-auto w-[77.8%] max-mobile-big:w-full max-note:w-[85vw] leading-[2.7vw] 3xl:leading-[52px]">
-            <!-- Section Title -->
-            <div class="flex flex-col items-center pt-[6%] justify-center text-center mb-[95px] max-note:mb-[5.9vw] max-mobile-mid:mb-[7vw] max-mobile-mid:my-[3.5vw] scroll-animate cursor-default">
-                <h2 class="text-[4.5vw] 3xl:text-[86px] max-mobile-mid:text-[5.6vw] 4xl:text-[100px]">
-                    <span class="text-white uppercase tracking-normal ">UNLOCK YOUR</span>
-                </h2>
-                <div class="w-[90.6%] h-0.5 bg-white my-[31px] max-note:my-[2.3vw] max-mobile-mid:my-[2vw] 4xl:h-1"></div>
-                <div class="flex items-center mt-1 justify-center text-center">
-                    <h2 class="text-lime-green text-[5vw] 3xl:text-[96px] max-mobile-mid:text-[6.5vw] 4xl:text-[120px] font-black uppercase tracking-normal">CRYPTO <span class="text-white">POTENTIAL</span></h2>
-                </div>
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="images/FIRST-BLOCK.webp" alt="Programs Background" class="w-full h-full object-cover object-top md:opacity-75 opacity-30">
+    </div>
+    <!-- Top Gradient -->
+    <div class="absolute w-screen max-w-[full] unlock-gradient inset-0 z-10 h-[404px]"></div>
+    <!-- Bottom Gradient -->
+    <div class="absolute w-screen bottom-[0px] max-w-[full] unlock-gradient-revert z-10 h-[532px]"></div>
+    <div class="relative z-10 pb-[92px] mx-auto w-[77.8%] max-mobile-big:w-full max-note:w-[85vw] leading-[2.7vw] 3xl:leading-[52px]">
+        <!-- Section Title -->
+        <div class="flex flex-col items-center pt-[6%] justify-center text-center mb-[95px] max-note:mb-[5.9vw] max-mobile-mid:mb-[7vw] max-mobile-mid:my-[3.5vw] scroll-animate cursor-default">
+            <h2 class="text-[4.5vw] 3xl:text-[86px] max-mobile-mid:text-[5.6vw] 4xl:text-[100px]">
+                <span class="text-white uppercase tracking-normal ">UNLOCK YOUR</span>
+            </h2>
+            <div class="w-[90.6%] h-0.5 bg-white my-[31px] max-note:my-[2.3vw] max-mobile-mid:my-[2vw] 4xl:h-1"></div>
+            <div class="flex items-center mt-1 justify-center text-center">
+                <h2 class="text-lime-green text-[5vw] 3xl:text-[96px] max-mobile-mid:text-[6.5vw] 4xl:text-[120px] font-black uppercase tracking-normal">CRYPTO <span class="text-white">POTENTIAL</span></h2>
             </div>
-            <!-- Programs Grid -->
-            <div class="grid gap-y-2 gap-x-[5.5vw] mx-auto tracking-normal grid-cols-[repeat(3,28.5%)] max-note:grid-cols-[repeat(3,29%)] max-mobile-big:grid-cols-[repeat(auto-fit,minmax(0,328px))] max-mobile-big:px-[18.4vw] max-mobile-big:justify-center max-mobile-big:gap-y-[30px] max-w-[1920px]">
-                <!-- Program 1: Crypto & Blockchain - BEGINNERS -->
-                <div class="  transition-colors scroll-animate-scale rounded-[20px] flex flex-col cursor-default">
-                    <!-- Image Section -->
-                    <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green relative">
-                        <img src="images/crypto-beginners.webp" alt="Crypto trading for beginners" class="w-auto object-contain rounded-[20px] 3xl:w-full">
-                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px] text-lime-green font-black tracking-wide mb-4 ">Crypto & Blockchain</h3>
-                    </div>
+        </div>
+        <!-- Programs Grid -->
+        <div class="grid gap-y-2 gap-x-[5.5vw] mx-auto tracking-normal grid-cols-[repeat(3,28.5%)] max-note:grid-cols-[repeat(3,29%)] max-mobile-big:grid-cols-[repeat(auto-fit,minmax(0,328px))] max-mobile-big:px-[18.4vw] max-mobile-big:justify-center max-mobile-big:gap-y-[30px] max-w-[1920px]">
+            <!-- Program 1: Crypto & Blockchain - BEGINNERS -->
+            <div class="  transition-colors scroll-animate-scale rounded-[20px] flex flex-col cursor-default">
+                <!-- Image Section -->
+                <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green relative">
+                    <img src="images/crypto-beginners.webp" alt="Crypto trading for beginners" class="w-auto object-contain rounded-[20px] 3xl:w-full">
+                    <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px] text-lime-green font-black tracking-wide mb-4 ">Crypto & Blockchain</h3>
+                </div>
 
-                    <!-- Content Section -->
-                    <div class="py-[16px] bg-lime-green text-center rounded-b-[20px] z-5">
-                        <h3 class="text-black text-[2.3vw] max-note:text-[2.6vw] max-mobile-big:text-[4.3vw] max-mobile-mid:text-[6.5vw] 3xl:text-[45px] 4xl:text-[55px]  font-extrablack uppercase tracking-wide">BEGINNERS</h3>
-                    </div>
-                    <div class=" relative text-[20px] max-tablet:text-[1.5vw] max-mobile-big:text-[2vw] max-mobile-mid:text-[3.1vw] leading-[42px] max-tablet:leading-[3.5vw] tracking-normal mt-[-20px] 4xl:text-[25px] max-mobile:text-[12px] max-mobile:leading-[20px]">
-                        <!-- Gradient borders -->
-                        <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
-                        <div class="absolute right-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
-                        <div class="bg-black/80 p-[28px] pt-[48px] max-mobile-big:pt-[28px] max-mobile-big:pb-[10px] flex-1 flex flex-col justify-between h-full">
-                            <!-- Short Description -->
-                            <p class="text-gray-300 text-left program-short-desc">
-                                Learn the basics of cryptocurrency and blockchain technology.
-                                Perfect for beginners who want to understand how digital
-                                assets work and their future
-                            </p>
-                            <!-- Full Description (Hidden by default) -->
-                            <p class="text-gray-300 program-full-desc hidden">
-                                Learn the basics of cryptocurrency and blockchain technology. Perfect for beginners who want to understand how digital assets work and their future potential. This comprehensive course covers everything from the fundamentals of blockchain to understanding different cryptocurrencies. You'll learn about wallets, exchanges, security best practices, and the technology that powers the future of finance. By the end of this program, you'll have a solid foundation to start your crypto journey with confidence.
-                            </p>
-                            <!-- Full Program Button -->
-                            <div class="text-center ">
-                                <button class="text-lime-green font-semibold mt-3 hover:text-white transition-colors program-toggle-btn cursor-pointer">
-                                    Full Program
-                                </button>
-                            </div>
+                <!-- Content Section -->
+                <div class="py-[16px] bg-lime-green text-center rounded-b-[20px] z-5">
+                    <h3 class="text-black text-[2.3vw] max-note:text-[2.6vw] max-mobile-big:text-[4.3vw] max-mobile-mid:text-[6.5vw] 3xl:text-[45px] 4xl:text-[55px]  font-extrablack uppercase tracking-wide">BEGINNERS</h3>
+                </div>
+                <div class=" relative text-[20px] max-tablet:text-[1.5vw] max-mobile-big:text-[2vw] max-mobile-mid:text-[3.1vw] leading-[42px] max-tablet:leading-[3.5vw] tracking-normal mt-[-20px] 4xl:text-[25px] max-mobile:text-[12px] max-mobile:leading-[20px]">
+                    <!-- Gradient borders -->
+                    <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
+                    <div class="absolute right-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
+                    <div class="bg-black/80 p-[28px] pt-[48px] max-mobile-big:pt-[28px] max-mobile-big:pb-[10px] flex-1 flex flex-col justify-between h-full">
+                        <!-- Short Description -->
+                        <p class="text-gray-300 text-left program-short-desc">
+                            Learn the basics of cryptocurrency and blockchain technology.
+                            Perfect for beginners who want to understand how digital
+                            assets work and their future
+                        </p>
+                        <!-- Full Description (Hidden by default) -->
+                        <p class="text-gray-300 program-full-desc hidden">
+                            Learn the basics of cryptocurrency and blockchain technology. Perfect for beginners who want to understand how digital assets work and their future potential. This comprehensive course covers everything from the fundamentals of blockchain to understanding different cryptocurrencies. You'll learn about wallets, exchanges, security best practices, and the technology that powers the future of finance. By the end of this program, you'll have a solid foundation to start your crypto journey with confidence.
+                        </p>
+                        <!-- Full Program Button -->
+                        <div class="text-center ">
+                            <button class="text-lime-green font-semibold mt-3 hover:text-white transition-colors program-toggle-btn cursor-pointer">
+                                Full Program
+                            </button>
                         </div>
                     </div>
-                    
-                    <!-- Price Section -->
-                    <div class="relative bg-lime-green rounded-b-[20px] max-mobile-mid:rounded-b-[10px] p-4">
-                        <a href="/register" class="pointer">
+                </div>
+
+                <!-- Price Section -->
+                <div class="relative bg-lime-green rounded-b-[20px] max-mobile-mid:rounded-b-[10px] p-4">
+                    <a href="/register" class="pointer">
                         <div class="text-black text-[2.7vw] 3xl:text-[53px] max-note:text-[3vw] max-mobile-big:text-[5vw] max-mobile-mid:text-[10vw] font-extrablack text-center 4xl:text-[65px] hover:scale-[1.1] hover:text-shadow-lg hover:text-shadow-black hover:text-white">50
                             <span class="text-gray-black font-medium text-[1.8vw] 3xl:text-[32px] tracking-normal max-note:text-[2.3vw] max-mobile-big:text-[4vw] max-mobile-mid:text-[7.5vw] 4xl:text-[43px]">$</span>
                         </div>
                         <span class="absolute bottom-[-13px] max-note:bottom-[-3px] right-3 z-15 text-white font-normal knewave  text-[3.3vw] 3xl:text-[64px] leading-[1.8vw] 3xl:leading-[34px] max-note:text-[4.3vw] 4xl:text-[80px] max-mobile-big:text-[6vw] max-mobile-mid:text-[7.5vw] text-outline hover:invert max-mobile:text-[32px] ">start</span>
-                        </a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Program 2: Crypto Trading - FUNDAMENTALS -->
+            <div class="transition-colors scroll-animate-scale rounded-[20px] flex flex-col cursor-default">
+                <!-- Image Section -->
+                <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green">
+                    <img src="images/crypto-trading.webp" alt="Crypto Trading Course" class="w-auto object-contain rounded-[20px] 3xl:w-full">
+                    <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 ">Crypto Trading</h3>
+                </div>
+
+                <!-- Content Section -->
+                <div class="py-[16px] bg-lime-green text-center rounded-b-[20px] z-5">
+                    <h3 class="text-black text-[2.3vw] max-note:text-[2.6vw] max-mobile-big:text-[4.3vw] max-mobile-mid:text-[6.5vw] 3xl:text-[45px] 4xl:text-[55px] font-extrablack uppercase tracking-wide">FUNDAMENTALS</h3>
+                </div>
+                <div class="relative text-[20px] max-tablet:text-[1.5vw] max-mobile-big:text-[2vw] max-mobile-mid:text-[3.1vw] leading-[42px] max-tablet:leading-[3.5vw] tracking-normal mt-[-20px] 4xl:text-[25px] max-mobile:text-[12px] max-mobile:leading-[20px]">
+                    <!-- Gradient borders -->
+                    <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
+                    <div class="absolute right-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
+                    <div class="bg-black/80 p-[28px] pt-[48px] max-mobile-big:pt-[28px] max-mobile-big:pb-[10px] flex-1 flex flex-col justify-between h-full">
+                        <!-- Short Description -->
+                        <p class="text-gray-300 text-left program-short-desc">
+                            Master advanced trading strategies and technical analysis.
+                            Learn to read charts, identify patterns, and make informed
+                            trading decisions with confidence.
+                        </p>
+                        <!-- Full Description (Hidden by default) -->
+                        <p class="text-gray-300 program-full-desc hidden">
+                            Master advanced trading strategies and technical analysis. Learn to read charts, identify patterns, and make informed trading decisions with confidence. This course dives deep into market psychology, risk management, and proven trading techniques used by professionals. You'll understand candlestick patterns, support and resistance levels, and how to use indicators effectively. Discover how to control emotions, develop a winning mindset, and create a sustainable trading strategy that works for you.
+                        </p>
+                        <!-- Full Program Button -->
+                        <div class="text-center">
+                            <button class="text-lime-green font-semibold mt-3 hover:text-white transition-colors program-toggle-btn cursor-pointer">
+                                Full Program
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Program 2: Crypto Trading - FUNDAMENTALS -->
-                <div class="transition-colors scroll-animate-scale rounded-[20px] flex flex-col cursor-default">
-                    <!-- Image Section -->
-                    <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green border-[2px] border-lime-green">
-                        <img src="images/crypto-trading.webp" alt="Crypto Trading Course" class="w-auto object-contain rounded-[20px] 3xl:w-full">
-                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 ">Crypto Trading</h3>
-                    </div>
-
-                    <!-- Content Section -->
-                    <div class="py-[16px] bg-lime-green text-center rounded-b-[20px] z-5">
-                        <h3 class="text-black text-[2.3vw] max-note:text-[2.6vw] max-mobile-big:text-[4.3vw] max-mobile-mid:text-[6.5vw] 3xl:text-[45px] 4xl:text-[55px] font-extrablack uppercase tracking-wide">FUNDAMENTALS</h3>
-                    </div>
-                    <div class="relative text-[20px] max-tablet:text-[1.5vw] max-mobile-big:text-[2vw] max-mobile-mid:text-[3.1vw] leading-[42px] max-tablet:leading-[3.5vw] tracking-normal mt-[-20px] 4xl:text-[25px] max-mobile:text-[12px] max-mobile:leading-[20px]">
-                        <!-- Gradient borders -->
-                        <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
-                        <div class="absolute right-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
-                        <div class="bg-black/80 p-[28px] pt-[48px] max-mobile-big:pt-[28px] max-mobile-big:pb-[10px] flex-1 flex flex-col justify-between h-full">
-                            <!-- Short Description -->
-                            <p class="text-gray-300 text-left program-short-desc">
-                                Master advanced trading strategies and technical analysis.
-                                Learn to read charts, identify patterns, and make informed
-                                trading decisions with confidence.
-                            </p>
-                            <!-- Full Description (Hidden by default) -->
-                            <p class="text-gray-300 program-full-desc hidden">
-                                Master advanced trading strategies and technical analysis. Learn to read charts, identify patterns, and make informed trading decisions with confidence. This course dives deep into market psychology, risk management, and proven trading techniques used by professionals. You'll understand candlestick patterns, support and resistance levels, and how to use indicators effectively. Discover how to control emotions, develop a winning mindset, and create a sustainable trading strategy that works for you.
-                            </p>
-                            <!-- Full Program Button -->
-                            <div class="text-center">
-                                <button class="text-lime-green font-semibold mt-3 hover:text-white transition-colors program-toggle-btn cursor-pointer">
-                                    Full Program
-                                </button>
-                            </div>
+                <!-- Price Section -->
+                <div class="relative bg-lime-green rounded-b-[20px] max-mobile-mid:rounded-b-[10px] p-4">
+                    <a href="/register" class="pointer ">
+                        <div class="text-black text-[2.7vw] 3xl:text-[53px] max-note:text-[3vw] max-mobile-big:text-[5vw] max-mobile-mid:text-[10vw] font-extrablack text-center 4xl:text-[65px] transition-colors hover:scale-[1.1] hover:text-shadow-lg hover:text-shadow-black hover:text-white">150
+                            <span class="text-gray-black font-medium text-[1.8vw] max-mobile-big:text-[4vw] max-mobile-mid:text-[7.5vw] 3xl:text-[32px] max-note:text-[2.3vw] tracking-normal 4xl:text-[43px] ">$</span>
                         </div>
-                    </div>
+                        <span class="absolute  bottom-[-13px] max-note:bottom-[-3px] right-3 z-15 text-white font-normal knewave text-[3.3vw] 3xl:text-[64px] 4xl:text-[80px] leading-[1.8vw] 3xl:leading-[34px] max-note:text-[4.3vw] max-mobile-big:text-[6vw] max-mobile-mid:text-[7.5vw] text-outline  hover:invert max-mobile:text-[32px] " >start</span>
+                    </a>
+                </div>
+            </div>
 
-                    <!-- Price Section -->
-                    <div class="relative bg-lime-green rounded-b-[20px] max-mobile-mid:rounded-b-[10px] p-4">
-                        <a href="/register" class="pointer ">
-                            <div class="text-black text-[2.7vw] 3xl:text-[53px] max-note:text-[3vw] max-mobile-big:text-[5vw] max-mobile-mid:text-[10vw] font-extrablack text-center 4xl:text-[65px] transition-colors hover:scale-[1.1] hover:text-shadow-lg hover:text-shadow-black hover:text-white">150
-                                <span class="text-gray-black font-medium text-[1.8vw] max-mobile-big:text-[4vw] max-mobile-mid:text-[7.5vw] 3xl:text-[32px] max-note:text-[2.3vw] tracking-normal 4xl:text-[43px] ">$</span>
-                            </div>
-                            <span class="absolute  bottom-[-13px] max-note:bottom-[-3px] right-3 z-15 text-white font-normal knewave text-[3.3vw] 3xl:text-[64px] 4xl:text-[80px] leading-[1.8vw] 3xl:leading-[34px] max-note:text-[4.3vw] max-mobile-big:text-[6vw] max-mobile-mid:text-[7.5vw] text-outline  hover:invert max-mobile:text-[32px] " >start</span>
-                        </a>
+
+            <!-- Program 3: Private Crypto - COMMUNITY -->
+            <div class="transition-colors scroll-animate-scale rounded-[20px] flex flex-col cursor-default">
+                <!-- Image Section -->
+                <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green/50 border-[2px] border-lime-green/10 ">
+                    <img src="images/Crypto-community.webp" alt="Crypto Community" class="w-auto object-contain rounded-[20px] 3xl:w-full brightness-[0.5]">
+                    <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 brightness-[0.5]">Private Crypto</h3>
+                    <div class="absolute transform-[rotate(-12.21deg)] top-[20%] max-tablet:top-[17%] max-mobile-big:top-[25%] 3xl:top-[22%] text-center w-full">
+                        <span class="text-lime-green knewave text-[4.8vw] max-mobile-big:text-[8vw] max-mobile-mid:text-[12vw] 3xl:text-[93px] 4xl:text-[125px] leading-[4.5vw]  max-mobile-big:leading-[7vw] max-mobile-mid:leading-[11vw] 3xl:leading-[88px] cursor-default">COMING<br> SOON</span>
                     </div>
                 </div>
 
-
-                <!-- Program 3: Private Crypto - COMMUNITY -->
-                <div class="transition-colors scroll-animate-scale rounded-[20px] flex flex-col cursor-default">
-                    <!-- Image Section -->
-                    <div class="flex items-end justify-center rounded-t-[20px] bg-lime-green/50 border-[2px] border-lime-green/10 ">
-                        <img src="images/Crypto-community.webp" alt="Crypto Community" class="w-auto object-contain rounded-[20px] 3xl:w-full brightness-[0.5]">
-                        <h3 class="absolute text-[2vw] max-note:text-[2.2vw] max-mobile-big:text-[3.5vw] max-mobile-mid:text-[5.3vw] 3xl:text-[39px] 4xl:text-[47px]  text-lime-green font-black tracking-wide mb-4 brightness-[0.5]">Private Crypto</h3>
-                        <div class="absolute transform-[rotate(-12.21deg)] top-[20%] max-tablet:top-[17%] max-mobile-big:top-[25%] 3xl:top-[22%] text-center w-full">
-                            <span class="text-lime-green knewave text-[4.8vw] max-mobile-big:text-[8vw] max-mobile-mid:text-[12vw] 3xl:text-[93px] 4xl:text-[125px] leading-[4.5vw]  max-mobile-big:leading-[7vw] max-mobile-mid:leading-[11vw] 3xl:leading-[88px] cursor-default">COMING<br> SOON</span>
+                <!-- Content Section -->
+                <div class="py-[16px] bg-lime-green text-center rounded-b-[20px] brightness-[0.5] z-5 ">
+                    <h3 class="text-black text-[2.3vw] max-note:text-[2.6vw] max-mobile-big:text-[4.3vw] max-mobile-mid:text-[6.5vw] 3xl:text-[45px] 4xl:text-[55px] font-extrablack uppercase tracking-wide">COMMUNITY</h3>
+                </div>
+                <div class="relative text-[20px] max-tablet:text-[1.5vw] max-tablet:leading-[3.5vw] max-mobile-big:text-[2vw] max-mobile-mid:text-[3.1vw] leading-[42px] tracking-normal brightness-[0.5] mt-[-20px] 4xl:text-[25px] max-mobile:text-[12px] max-mobile:leading-[20px]">
+                    <!-- Gradient borders -->
+                    <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
+                    <div class="absolute right-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
+                    <div class="bg-black/80 p-[28px] pt-[48px] max-mobile-big:pt-[28px] max-mobile-big:pb-[10px] flex-1 flex flex-col justify-between h-full">
+                        <!-- Short Description -->
+                        <p class="text-gray-300 text-left program-short-desc">
+                            Join an exclusive community of crypto traders and investors.
+                            Get access to real-time insights, private signals, and expert
+                            analysis from experienced traders...
+                        </p>
+                        <!-- Full Description (Hidden by default) -->
+                        <p class="text-gray-300 program-full-desc hidden">
+                            Join an exclusive community of crypto traders and investors. Get access to real-time insights, private signals, and expert analysis from experienced traders. This premium membership gives you direct access to our private Discord server where we share live trades, market analysis, and investment opportunities. Network with like-minded individuals, participate in weekly strategy sessions, and receive personalized feedback on your trading approach. Be part of an elite group that shares knowledge and wins together.
+                        </p>
+                        <!-- Full Program Button -->
+                        <div class="text-center">
+                            <button class="text-lime-green font-semibold mt-3 hover:text-white transition-colors program-toggle-btn cursor-pointer" >
+                                Full Program
+                            </button>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Content Section -->
-                    <div class="py-[16px] bg-lime-green text-center rounded-b-[20px] brightness-[0.5] z-5 ">
-                        <h3 class="text-black text-[2.3vw] max-note:text-[2.6vw] max-mobile-big:text-[4.3vw] max-mobile-mid:text-[6.5vw] 3xl:text-[45px] 4xl:text-[55px] font-extrablack uppercase tracking-wide">COMMUNITY</h3>
-                    </div>
-                    <div class="relative text-[20px] max-tablet:text-[1.5vw] max-tablet:leading-[3.5vw] max-mobile-big:text-[2vw] max-mobile-mid:text-[3.1vw] leading-[42px] tracking-normal brightness-[0.5] mt-[-20px] 4xl:text-[25px] max-mobile:text-[12px] max-mobile:leading-[20px]">
-                        <!-- Gradient borders -->
-                        <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
-                        <div class="absolute right-0 top-0 w-1 h-full bg-gradient-to-b from-transparent from-0% via-transparent via-75% to-lime-green to-100%"></div>
-                        <div class="bg-black/80 p-[28px] pt-[48px] max-mobile-big:pt-[28px] max-mobile-big:pb-[10px] flex-1 flex flex-col justify-between h-full">
-                            <!-- Short Description -->
-                            <p class="text-gray-300 text-left program-short-desc">
-                                Join an exclusive community of crypto traders and investors.
-                                Get access to real-time insights, private signals, and expert
-                                analysis from experienced traders...
-                            </p>
-                            <!-- Full Description (Hidden by default) -->
-                            <p class="text-gray-300 program-full-desc hidden">
-                                Join an exclusive community of crypto traders and investors. Get access to real-time insights, private signals, and expert analysis from experienced traders. This premium membership gives you direct access to our private Discord server where we share live trades, market analysis, and investment opportunities. Network with like-minded individuals, participate in weekly strategy sessions, and receive personalized feedback on your trading approach. Be part of an elite group that shares knowledge and wins together.
-                            </p>
-                            <!-- Full Program Button -->
-                            <div class="text-center">
-                                <button class="text-lime-green font-semibold mt-3 hover:text-white transition-colors program-toggle-btn cursor-pointer" >
-                                    Full Program
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Price Section -->
-                    <div class="relative bg-lime-green rounded-b-[20px] max-mobile-mid:rounded-b-[10px] p-4 brightness-[0.5]">
-                        <a href="#" class="cursor-not-allowed" >
+                <!-- Price Section -->
+                <div class="relative bg-lime-green rounded-b-[20px] max-mobile-mid:rounded-b-[10px] p-4 brightness-[0.5]">
+                    <a href="#" class="cursor-not-allowed" >
                         <div class="text-black text-[2.7vw] 3xl:text-[53px] max-note:text-[3vw] max-mobile-big:text-[5vw] max-mobile-mid:text-[10vw] font-extrablack text-center 4xl:text-[65px]">50<span class="text-gray-black font-medium text-[1.8vw] max-note:text-[2.3vw] max-mobile-big:text-[4vw] max-mobile-mid:text-[7.5vw]  3xl:text-[32px] tracking-normal 4xl:text-[43px]">$</span></div>
                         <span class="absolute bottom-[-13px] max-note:bottom-[-3px] right-3 z-15 text-white font-normal knewave text-[3.3vw] max-note:text-[4.3vw] max-mobile-big:text-[6vw] max-mobile-mid:text-[7.5vw] 3xl:text-[64px] leading-[1.8vw] 3xl:leading-[34px]  text-outline 4xl:text-[80px] max-mobile:text-[32px] ">start</span>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- For Whom Section -->
     <section id="for-whom" class="pt-[42px] pb-[133px] max-note:pb-[78px] bg-lime-green md:px-0">
-            <!-- Section Title -->
-            <div class="text-center mb-[85px] max-tablet:mb-[7.8vw] scroll-animate cursor-default">
-                <h2 class="text-[39px] max-mobile-mid:text-[10vw] font-bold leading-none 4xl:text-[100px]">
-                    <span class="text-black font-black uppercase tracking-wide">FOR</span>
-                </h2>
-                <div class="w-full h-[4px] bg-black mx-auto "></div>
-                <h2 class="text-[64px] max-mobile-mid:text-[15vw] font-black text-black uppercase -mt-2 leading-[60px] max-mobile-mid:leading-[15.6vw] 4xl:text-[120px] 4xl:leading-[100px]">WHOM?</h2>
+    <!-- Section Title -->
+    <div class="text-center mb-[85px] max-tablet:mb-[7.8vw] scroll-animate cursor-default">
+        <h2 class="text-[39px] max-mobile-mid:text-[10vw] font-bold leading-none 4xl:text-[100px]">
+            <span class="text-black font-black uppercase tracking-wide">FOR</span>
+        </h2>
+        <div class="w-full h-[4px] bg-black mx-auto "></div>
+        <h2 class="text-[64px] max-mobile-mid:text-[15vw] font-black text-black uppercase -mt-2 leading-[60px] max-mobile-mid:leading-[15.6vw] 4xl:text-[120px] 4xl:leading-[100px]">WHOM?</h2>
+    </div>
+    <div class="max-w-[80%] 4xl:max-w-[1920px] mx-auto max-note:max-w-[84.5vw] max-md:max-w-full ">
+        <!-- Target Audience Cards -->
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(0,328px))] max-mobile-big:grid-cols-1 max-mobile-big:justify-items-center 4xl:justify-items-center max-md:gap-y-[30px] md:grid-cols-3 gap-x-[3.1vw] max-note:gap-x-[5vw]  mx-auto md:px-0 px-[30px] cursor-default">
+            <!-- Card 1: New to Crypto -->
+            <div class="flex flex-col text-center scroll-animate-left max-w-[423px] items-center ">
+                <!-- Number -->
+                <div class="text-[90px] max-tablet:text-[64px] leading-[34px] 4xl:text-[125px] text-black knewave">1</div>
+
+                <!-- Title -->
+                <h3 class="text-[32px] 4xl:text-[40px] 4xl:mt-[90px] 4xl:mb-[40px] max-note:text-[2.3vw] max-md:text-[24px] leading-[34px] font-extrabold text-black tracking-normal mb-[30px] mt-[53px] max-tablet:mt-[5vw] max-md:my-[20px]">New to Crypto?</h3>
+
+                <!-- Description Box -->
+                <div class="bg-transparent border-4 border-black rounded-tr-[40px] align-top rounded-bl-[40px] max-note:w-[100%] text-center text-[20px] max-note:text-[1.5vw] max-tablet:text-[1.8vw] max-md:text-[14px] max-md:leading-[22px]  leading-[34px] flex-1 flex items-center justify-center 4xl:text-[25px] 4xl:border-5">
+                    <p class="text-black px-[1.8vw] max-tablet:px-[1vw] max-md:p-[26px]  max-tablet:py-[1vw] py-[27px] 4xl:p-[20px]">
+                        Start your journey from zero and finally understand how blockchain and the money of the future work.
+                    </p>
+                </div>
             </div>
-            <div class="max-w-[80%] 4xl:max-w-[1920px] mx-auto max-note:max-w-[84.5vw] max-md:max-w-full ">
-            <!-- Target Audience Cards -->
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(0,328px))] max-mobile-big:grid-cols-1 max-mobile-big:justify-items-center 4xl:justify-items-center max-md:gap-y-[30px] md:grid-cols-3 gap-x-[3.1vw] max-note:gap-x-[5vw]  mx-auto md:px-0 px-[30px] cursor-default">
-                <!-- Card 1: New to Crypto -->
-                <div class="flex flex-col text-center scroll-animate-left max-w-[423px] items-center ">
-                    <!-- Number -->
-                    <div class="text-[90px] max-tablet:text-[64px] leading-[34px] 4xl:text-[125px] text-black knewave">1</div>
-                    
-                    <!-- Title -->
-                    <h3 class="text-[32px] 4xl:text-[40px] 4xl:mt-[90px] 4xl:mb-[40px] max-note:text-[2.3vw] max-md:text-[24px] leading-[34px] font-extrabold text-black tracking-normal mb-[30px] mt-[53px] max-tablet:mt-[5vw] max-md:my-[20px]">New to Crypto?</h3>
-                    
-                    <!-- Description Box -->
-                    <div class="bg-transparent border-4 border-black rounded-tr-[40px] align-top rounded-bl-[40px] max-note:w-[100%] text-center text-[20px] max-note:text-[1.5vw] max-tablet:text-[1.8vw] max-md:text-[14px] max-md:leading-[22px]  leading-[34px] flex-1 flex items-center justify-center 4xl:text-[25px] 4xl:border-5">
-                        <p class="text-black px-[1.8vw] max-tablet:px-[1vw] max-md:p-[26px]  max-tablet:py-[1vw] py-[27px] 4xl:p-[20px]">
-                            Start your journey from zero and finally understand how blockchain and the money of the future work.
-                        </p>
-                    </div>
+
+            <!-- Card 2: Trade Like a Pro -->
+            <div class="flex flex-col text-center scroll-animate-left max-w-[423px] items-center">
+                <!-- Number -->
+                <div class="text-[90px] max-tablet:text-[64px] leading-[34px] 4xl:text-[125px]  text-black knewave">2</div>
+
+                <!-- Title -->
+                <h3 class="text-[32px] 4xl:text-[40px] 4xl:mt-[90px] 4xl:mb-[40px max-note:text-[2.3vw] max-md:text-[24px] leading-[34px] font-extrabold text-black tracking-normal mb-[30px] mt-[53px] max-tablet:mt-[5vw] max-md:my-[20px] ">Trade Like a Pro</h3>
+
+                <!-- Description Box -->
+                <div class="bg-transparent border-4 border-black rounded-tr-[40px] align-top rounded-bl-[40px] max-note:w-[100%] text-center text-[20px] max-note:text-[1.5vw] max-tablet:text-[1.8vw] max-md:text-[14px] max-md:leading-[22px] leading-[34px] flex-1 flex items-center justify-center 4xl:text-[25px] 4xl:border-5">
+                    <p class="text-black px-[35px] py-[27px] max-md:p-[26px] max-tablet:px-[1vw]  max-tablet:py-[1vw] 4xl:p-[20px]">
+                        Learn market psychology, find real entry points, and stop losing because of emotions.
+                    </p>
                 </div>
-                
-                <!-- Card 2: Trade Like a Pro -->
-                <div class="flex flex-col text-center scroll-animate-left max-w-[423px] items-center">
-                    <!-- Number -->
-                    <div class="text-[90px] max-tablet:text-[64px] leading-[34px] 4xl:text-[125px]  text-black knewave">2</div>
-                    
-                    <!-- Title -->
-                    <h3 class="text-[32px] 4xl:text-[40px] 4xl:mt-[90px] 4xl:mb-[40px max-note:text-[2.3vw] max-md:text-[24px] leading-[34px] font-extrabold text-black tracking-normal mb-[30px] mt-[53px] max-tablet:mt-[5vw] max-md:my-[20px] ">Trade Like a Pro</h3>
-                    
-                    <!-- Description Box -->
-                    <div class="bg-transparent border-4 border-black rounded-tr-[40px] align-top rounded-bl-[40px] max-note:w-[100%] text-center text-[20px] max-note:text-[1.5vw] max-tablet:text-[1.8vw] max-md:text-[14px] max-md:leading-[22px] leading-[34px] flex-1 flex items-center justify-center 4xl:text-[25px] 4xl:border-5">
-                        <p class="text-black px-[35px] py-[27px] max-md:p-[26px] max-tablet:px-[1vw]  max-tablet:py-[1vw] 4xl:p-[20px]">
-                            Learn market psychology, find real entry points, and stop losing because of emotions.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Card 3: Join the Private Club -->
-                <div class="flex flex-col text-center scroll-animate-right max-w-[423px] items-center">
-                    <!-- Number -->
-                    <div class="text-[90px] max-tablet:text-[64px] leading-[34px] 4xl:text-[125px] text-black knewave">3</div>
-                    
-                    <!-- Title -->
-                    <h3 class="text-[32px] 4xl:text-[40px] 4xl:mt-[90px] 4xl:mb-[40px max-note:text-[2.3vw] max-md:text-[24px] leading-[34px]  font-extrabold text-black tracking-normal mb-[30px] mt-[53px] max-tablet:mt-[5vw] max-md:my-[20px]">Join the Private Club</h3>
-                    
-                    <!-- Description Box -->
-                    <div class="bg-transparent border-4 border-black rounded-tr-[40px] align-top rounded-bl-[40px] max-note:w-[100%] text-center text-[20px] max-note:text-[1.5vw] max-tablet:text-[1.8vw] max-md:text-[14px] max-md:leading-[22px] leading-[34px] flex-1 flex items-center justify-center 4xl:text-[25px] 4xl:border-5">
-                        <p class="text-black px-[35px] py-[27px] max-md:p-[26px] max-tablet:px-[1vw]  max-tablet:py-[1vw] 4xl:p-[20px]">
-                            Get access to my inner circle — real trades, real results, real people, and exclusive community insights.
-                        </p>
-                    </div>
+            </div>
+
+            <!-- Card 3: Join the Private Club -->
+            <div class="flex flex-col text-center scroll-animate-right max-w-[423px] items-center">
+                <!-- Number -->
+                <div class="text-[90px] max-tablet:text-[64px] leading-[34px] 4xl:text-[125px] text-black knewave">3</div>
+
+                <!-- Title -->
+                <h3 class="text-[32px] 4xl:text-[40px] 4xl:mt-[90px] 4xl:mb-[40px max-note:text-[2.3vw] max-md:text-[24px] leading-[34px]  font-extrabold text-black tracking-normal mb-[30px] mt-[53px] max-tablet:mt-[5vw] max-md:my-[20px]">Join the Private Club</h3>
+
+                <!-- Description Box -->
+                <div class="bg-transparent border-4 border-black rounded-tr-[40px] align-top rounded-bl-[40px] max-note:w-[100%] text-center text-[20px] max-note:text-[1.5vw] max-tablet:text-[1.8vw] max-md:text-[14px] max-md:leading-[22px] leading-[34px] flex-1 flex items-center justify-center 4xl:text-[25px] 4xl:border-5">
+                    <p class="text-black px-[35px] py-[27px] max-md:p-[26px] max-tablet:px-[1vw]  max-tablet:py-[1vw] 4xl:p-[20px]">
+                        Get access to my inner circle — real trades, real results, real people, and exclusive community insights.
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="py-[95px] bg-black relative overflow-hidden max-mobile-big:py-[15px] cursor-default">
 
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="images/ABOUT ME.webp" alt="About Me Background" class="w-full h-full object-cover opacity-75">
-        </div>
-        <!-- Top Gradient -->
-        <div class="absolute w-screen unlock-gradient inset-0 z-10 h-[257px]"></div>
-        <!-- Bottom Gradient -->
-        <div class="absolute w-screen bottom-[0px] unlock-gradient-revert z-10 h-[257px]"></div>
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="images/ABOUT ME.webp" alt="About Me Background" class="w-full h-full object-cover opacity-75">
+    </div>
+    <!-- Top Gradient -->
+    <div class="absolute w-screen unlock-gradient inset-0 z-10 h-[257px]"></div>
+    <!-- Bottom Gradient -->
+    <div class="absolute w-screen bottom-[0px] unlock-gradient-revert z-10 h-[257px]"></div>
 
-        <div class="relative z-10  mx-auto h-max max-w-[1176px] max-note:ml-[8.3vw] max-note:mr-[7vw] max-tablet:ml-[5vw] max-tablet:mr-[4vw] max-mobile-big:mx-[9.4vw] 4xl:max-w-[1920px]">
-            <div class="flex justify-center max-mobile-big:items-center">
-                <!-- Left Section - Image Placeholder -->
-                <div class="relative scroll-animate-left md:border-r-4 md:border-lime-green max-mobile-big:hidden">
-                    <div class="flex items-center md:justify-end justify-center overflow-hidden pt-[75px] pb-[105px]">
-                        <img src="images/homeless-photo.webp" alt="About Me" loading="lazy" class="w-[480px] object-contain rounded-l-[20px] 4xl:w-[600px]">
-                    </div>
+    <div class="relative z-10  mx-auto h-max max-w-[1176px] max-note:ml-[8.3vw] max-note:mr-[7vw] max-tablet:ml-[5vw] max-tablet:mr-[4vw] max-mobile-big:mx-[9.4vw] 4xl:max-w-[1920px]">
+        <div class="flex justify-center max-mobile-big:items-center">
+            <!-- Left Section - Image Placeholder -->
+            <div class="relative scroll-animate-left md:border-r-4 md:border-lime-green max-mobile-big:hidden">
+                <div class="flex items-center md:justify-end justify-center overflow-hidden pt-[75px] pb-[105px]">
+                    <img src="images/homeless-photo.webp" alt="About Me" loading="lazy" class="w-[480px] object-contain rounded-l-[20px] 4xl:w-[600px]">
                 </div>
-                
-                <!-- Right Section - Text Content -->
-                <div class="relative scroll-animate-right leading-[52px] max-mobile-big:border-r-4 max-mobile-big:border-lime-green">
-                    <!-- Content -->
-                    <div class="flex flex-col items-start pt-[75px] pl-[78px] max-note:pl-[4.1vw] max-mobile-big:pl-0 max-mobile-big:pt-[35px] max-mobile:pt-[15px] ">
-                        <h2 class="text-[4.5vw] 3xl:text-[86px] font-black text-lime-green uppercase tracking-wide mb-[100px] max-note:mb-[7.3vw] max-mobile-big:text-[8vw] max-mobile-mid:text-[13vw]  max-mobile-big:mb-[12px] max-mobile-mid:mb-[5vw] 4xl:text-[100px]">ABOUT ME</h2>
+            </div>
 
-                        <!-- Mobile Section - Image Placeholder -->
-                            <img src="images/homeless-photo.webp" alt="About Me" loading="lazy"
-                                 class="w-[100%] max-w-[400px] object-cover rounded-tl-[20px] max-mobile:h-[220px] max-mobile-mid:h-[320px] h-[420px]  object-[50%_40%]  hidden max-mobile-big:block">
+            <!-- Right Section - Text Content -->
+            <div class="relative scroll-animate-right leading-[52px] max-mobile-big:border-r-4 max-mobile-big:border-lime-green">
+                <!-- Content -->
+                <div class="flex flex-col items-start pt-[75px] pl-[78px] max-note:pl-[4.1vw] max-mobile-big:pl-0 max-mobile-big:pt-[35px] max-mobile:pt-[15px] ">
+                    <h2 class="text-[4.5vw] 3xl:text-[86px] font-black text-lime-green uppercase tracking-wide mb-[100px] max-note:mb-[7.3vw] max-mobile-big:text-[8vw] max-mobile-mid:text-[13vw]  max-mobile-big:mb-[12px] max-mobile-mid:mb-[5vw] 4xl:text-[100px]">ABOUT ME</h2>
 
-                        <div class=" max-mobile-big:p-[20px_17px_40px_6px]">
-                            <p class="text-white text-[20px] max-w-[612px] max-tablet:max-w-[452px] max-mobile-big:max-w-[43vw] max-mobile-mid:max-w-[68vw] max-mobile-big:text-[2.2vw] max-mobile-big:leading-[3vw]  max-mobile-mid:text-[3.1vw] max-mobile-mid:leading-[4vw] 4xl:text-[25px] 4xl:leading-[65px] max-mobile:text-[12px] max-mobile:leading-[15px]">
-                                When I first discovered cryptocurrency, I spent days learning how everything worked.<br>
-                                No one taught me - I learned through my own experience, sleepless nights, and real trades.<br>
-                                Step by step, gaining experience over the years, I turned knowledge into freedom and discovered a completely different world.<br>
-                                Today, I share what I've learned - through my lessons and private community.<br>
-                                If you want to understand the world of crypto, achieve financial independence, and take control of your future - welcome to my world.
-                            </p>
-                        </div>
+                    <!-- Mobile Section - Image Placeholder -->
+                    <img src="images/homeless-photo.webp" alt="About Me" loading="lazy"
+                         class="w-[100%] max-w-[400px] object-cover rounded-tl-[20px] max-mobile:h-[220px] max-mobile-mid:h-[320px] h-[420px]  object-[50%_40%]  hidden max-mobile-big:block">
+
+                    <div class=" max-mobile-big:p-[20px_17px_40px_6px]">
+                        <p class="text-white text-[20px] max-w-[612px] max-tablet:max-w-[452px] max-mobile-big:max-w-[43vw] max-mobile-mid:max-w-[68vw] max-mobile-big:text-[2.2vw] max-mobile-big:leading-[3vw]  max-mobile-mid:text-[3.1vw] max-mobile-mid:leading-[4vw] 4xl:text-[25px] 4xl:leading-[65px] max-mobile:text-[12px] max-mobile:leading-[15px]">
+                            When I first discovered cryptocurrency, I spent days learning how everything worked.<br>
+                            No one taught me - I learned through my own experience, sleepless nights, and real trades.<br>
+                            Step by step, gaining experience over the years, I turned knowledge into freedom and discovered a completely different world.<br>
+                            Today, I share what I've learned - through my lessons and private community.<br>
+                            If you want to understand the world of crypto, achieve financial independence, and take control of your future - welcome to my world.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <div class="max-w-[1763px] flex justify-center mx-[80px] max-tablet:mx-[4.4vw] mt-[36px] max-note:mt-0 scroll-animate-scale 4xl:max-w-[1920px] 4xl:mx-auto">
-            <a href="#programs">
+    <div class="max-w-[1763px] flex justify-center mx-[80px] max-tablet:mx-[4.4vw] mt-[36px] max-note:mt-0 scroll-animate-scale 4xl:max-w-[1920px] 4xl:mx-auto">
+        <a href="#programs">
             <img src="images/iPHONE-Footer-Carousel.webp" alt="iPHONE Presentation" loading="lazy" class="w-full h-full object-cover">
-            </a>
-        </div>
-        <div class="max-w-[1640px] mx-[7.4%] max-note:mx-[3.8%] bg-lime-green mt-[-63px] pt-[65px] pb-[30px] max-note:pt-[51px] rounded-t-[50px] md:rounded-t-[144px] relative z-[1] max-tablet:pt-[6.3vw] max-tablet:mt-[-1.6vw] max-tablet:pb-[20px] max-mobile-mid:pb-[0] 4xl:max-w-[1920px] 4xl:mx-auto cursor-default">
-            <!-- Main Call-to-Action -->
-            <div class="text-center mb-[85px] max-note:mb-[45px] scroll-animate max-mobile-mid:mb-[10px]">
-                <div class="flex items-center justify-center text-[93px] max-note:text-[6.8vw] relative 4xl:text-[120px]">
+        </a>
+    </div>
+    <div class="max-w-[1640px] mx-[7.4%] max-note:mx-[3.8%] bg-lime-green mt-[-63px] pt-[65px] pb-[30px] max-note:pt-[51px] rounded-t-[50px] md:rounded-t-[144px] relative z-[1] max-tablet:pt-[6.3vw] max-tablet:mt-[-1.6vw] max-tablet:pb-[20px] max-mobile-mid:pb-[0] 4xl:max-w-[1920px] 4xl:mx-auto cursor-default">
+        <!-- Main Call-to-Action -->
+        <div class="text-center mb-[85px] max-note:mb-[45px] scroll-animate max-mobile-mid:mb-[10px]">
+            <div class="flex items-center justify-center text-[93px] max-note:text-[6.8vw] relative 4xl:text-[120px]">
 
-                    <div class="flex flex-col text-black font-black leading-none">
+                <div class="flex flex-col text-black font-black leading-none">
 
                     <h1 class="font-semibold text-black leading-none">
                         <!-- Play Icon -->
@@ -420,48 +420,48 @@
                         <span class="ml-[-0.3vw]">Turn</span> <span class="font-black">Knowledge</span>
                     </h1>
                     <h2 class="font-semibold text-black ml-0 text-start"><span>Into </span><span class="font-black">Power</span></h2>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Social Media Icons and Legal/Support Info -->
-            <div class="flex justify-between items-center gap-1 mx-[6vw] max-tablet:mx-[3.75vw] text-black">
-                <!-- Social Media Icons -->
-                <div class="flex space-x-[10px] max-tablet:space-x-[1vw]">
-                    <!-- Instagram -->
-                    <a href="#" class="w-[60px] h-[60px] 4xl:w-[77px] 4xl:h-[77px] max-note:w-[4vw] max-note:h-[4vw] max-mobile-big:w-[5.2vw] max-mobile-big:h-[5.2vw] bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
-                        <svg class="w-[35px] h-[35px] 4xl:w-[45px] 4xl:h-[45px] max-note:w-[2.3vw]  max-note:h-[2.3vw] max-mobile-big:w-[3vw] max-mobile-big:h-[3vw] text-lime-green" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    
-                    <!-- YouTube -->
-                    <a href="#" class="w-[60px] h-[60px] 4xl:w-[77px] 4xl:h-[77px] max-note:w-[4vw] max-note:h-[4vw] max-mobile-big:w-[5.2vw] max-mobile-big:h-[5.2vw] bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
-                        <svg class="w-[35px] h-[35px] 4xl:w-[45px] 4xl:h-[45px] max-note:w-[2.3vw] max-note:h-[2.3vw] max-mobile-big:w-[3vw] max-mobile-big:h-[3vw] text-lime-green" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                    </a>
-                    
-                    <!-- TikTok -->
-                    <a href="#" class="w-[60px] h-[60px] 4xl:w-[77px] 4xl:h-[77px] max-note:w-[4vw] max-note:h-[4vw] max-mobile-big:w-[5.2vw] max-mobile-big:h-[5.2vw] bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
-                        <svg class="w-[35px] h-[35px] 4xl:w-[45px] 4xl:h-[45px] max-note:w-[2.3vw] max-note:h-[2.3vw] max-mobile-big:w-[3vw] max-mobile-big:h-[3vw] text-lime-green" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-                        </svg>
-                    </a>
-                </div>
-                <!-- Legal Info -->
-                <div class="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-8">
-                    <span class="font-bold text-[20px] leading-[52px] max-mobile-big:text-[1.9vw] max-tablet:text-sm 4xl:text-[25px]">Privacy Policy:
-                        <a href="#">Terms of Conditions</a>
-                    </span>
-                </div>
-                <!-- Support Info -->
-                <div class="flex flex-col items-center text-[20px] max-mobile-mid:text-[2.2vw] max-tablet:text-sm max-tablet:leading-[2vw] max-mobile-big:leading-[3vw] leading-[25px] max-mobile-mid:leading-[2.8vw] 4xl:text-[25px] 4xl:leading-[35px] ">
-                    <span class="font-bold">Support email:</span>
-                    <a href="mailto:blablabla@gmail.com" class="font-medium">blablabla@gmail.com</a>
                 </div>
             </div>
         </div>
+
+        <!-- Social Media Icons and Legal/Support Info -->
+        <div class="flex justify-between items-center gap-1 mx-[6vw] max-tablet:mx-[3.75vw] text-black">
+            <!-- Social Media Icons -->
+            <div class="flex space-x-[10px] max-tablet:space-x-[1vw]">
+                <!-- Instagram -->
+                <a href="#" class="w-[60px] h-[60px] 4xl:w-[77px] 4xl:h-[77px] max-note:w-[4vw] max-note:h-[4vw] max-mobile-big:w-[5.2vw] max-mobile-big:h-[5.2vw] bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
+                    <svg class="w-[35px] h-[35px] 4xl:w-[45px] 4xl:h-[45px] max-note:w-[2.3vw]  max-note:h-[2.3vw] max-mobile-big:w-[3vw] max-mobile-big:h-[3vw] text-lime-green" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+
+                <!-- YouTube -->
+                <a href="#" class="w-[60px] h-[60px] 4xl:w-[77px] 4xl:h-[77px] max-note:w-[4vw] max-note:h-[4vw] max-mobile-big:w-[5.2vw] max-mobile-big:h-[5.2vw] bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
+                    <svg class="w-[35px] h-[35px] 4xl:w-[45px] 4xl:h-[45px] max-note:w-[2.3vw] max-note:h-[2.3vw] max-mobile-big:w-[3vw] max-mobile-big:h-[3vw] text-lime-green" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+
+                <!-- TikTok -->
+                <a href="#" class="w-[60px] h-[60px] 4xl:w-[77px] 4xl:h-[77px] max-note:w-[4vw] max-note:h-[4vw] max-mobile-big:w-[5.2vw] max-mobile-big:h-[5.2vw] bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
+                    <svg class="w-[35px] h-[35px] 4xl:w-[45px] 4xl:h-[45px] max-note:w-[2.3vw] max-note:h-[2.3vw] max-mobile-big:w-[3vw] max-mobile-big:h-[3vw] text-lime-green" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                </a>
+            </div>
+            <!-- Legal Info -->
+            <div class="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-8">
+                    <span class="font-bold text-[20px] leading-[52px] max-mobile-big:text-[1.9vw] max-tablet:text-sm 4xl:text-[25px]">Privacy Policy:
+                        <a href="#">Terms of Conditions</a>
+                    </span>
+            </div>
+            <!-- Support Info -->
+            <div class="flex flex-col items-center text-[20px] max-mobile-mid:text-[2.2vw] max-tablet:text-sm max-tablet:leading-[2vw] max-mobile-big:leading-[3vw] leading-[25px] max-mobile-mid:leading-[2.8vw] 4xl:text-[25px] 4xl:leading-[35px] ">
+                <span class="font-bold">Support email:</span>
+                <a href="mailto:blablabla@gmail.com" class="font-medium">blablabla@gmail.com</a>
+            </div>
+        </div>
+    </div>
     </footer>
 
     <!-- Mobile Menu JavaScript -->
