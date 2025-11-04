@@ -35,15 +35,15 @@ window.addEventListener('scroll', function() {
 
     let activeLink = document.querySelector('.nav-hover');
     if(mobileMenu.classList.contains('hidden')) {
-        if(currentScrollPosition < programsSectionScroll) {
+        if(currentScrollPosition+20 < programsSectionScroll) {
             if(activeLink) activeLink.classList.remove('nav-hover');
             homeLink.classList.add('nav-hover');
             activeLink = homeLink
-        } else if(currentScrollPosition > programsSectionScroll && currentScrollPosition < forWhomSectionScroll) {
+        } else if(currentScrollPosition+20 >= programsSectionScroll && currentScrollPosition+20 < forWhomSectionScroll) {
             if(activeLink) activeLink.classList.remove('nav-hover');
             programsLink.classList.add('nav-hover');
             activeLink = programsLink
-        } else if(currentScrollPosition > forWhomSectionScroll && currentScrollPosition < aboutSectionScroll) {
+        } else if(currentScrollPosition+20 >= forWhomSectionScroll && currentScrollPosition+20 < aboutSectionScroll) {
             if(activeLink) activeLink.classList.remove('nav-hover');
             forWhomLink.classList.add('nav-hover');
             activeLink = forWhomLink
