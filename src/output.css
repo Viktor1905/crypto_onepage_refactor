@@ -924,9 +924,6 @@
   .text-\[4\.8vw\] {
     font-size: 4.8vw;
   }
-  .text-\[4vw\] {
-    font-size: 4vw;
-  }
   .text-\[5\.6vw\] {
     font-size: 5.6vw;
   }
@@ -997,14 +994,6 @@
   .leading-\[60px\] {
     --tw-leading: 60px;
     line-height: 60px;
-  }
-  .leading-\[90\%\] {
-    --tw-leading: 90%;
-    line-height: 90%;
-  }
-  .leading-\[100\%\] {
-    --tw-leading: 100%;
-    line-height: 100%;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1422,11 +1411,6 @@
       padding-inline: 1vw;
     }
   }
-  .max-tablet\:px-\[20px\] {
-    @media (width < 1090px) {
-      padding-inline: 20px;
-    }
-  }
   .max-tablet\:px-\[45px\] {
     @media (width < 1090px) {
       padding-inline: 45px;
@@ -1815,21 +1799,6 @@
       font-size: 6.5vw;
     }
   }
-  .max-mobile-mid\:text-\[6\.8vw\] {
-    @media (width < 555px) {
-      font-size: 6.8vw;
-    }
-  }
-  .max-mobile-mid\:text-\[6vw\] {
-    @media (width < 555px) {
-      font-size: 6vw;
-    }
-  }
-  .max-mobile-mid\:text-\[7\.2vw\] {
-    @media (width < 555px) {
-      font-size: 7.2vw;
-    }
-  }
   .max-mobile-mid\:text-\[7\.5vw\] {
     @media (width < 555px) {
       font-size: 7.5vw;
@@ -1843,11 +1812,6 @@
   .max-mobile-mid\:text-\[7vw\] {
     @media (width < 555px) {
       font-size: 7vw;
-    }
-  }
-  .max-mobile-mid\:text-\[8vw\] {
-    @media (width < 555px) {
-      font-size: 8vw;
     }
   }
   .max-mobile-mid\:text-\[10vw\] {
@@ -1912,6 +1876,46 @@
   .max-mobile\:pt-\[15px\] {
     @media (width < 400px) {
       padding-top: 15px;
+    }
+  }
+  .max-mobile\:text-\[12px\] {
+    @media (width < 400px) {
+      font-size: 12px;
+    }
+  }
+  .max-mobile\:text-\[32px\] {
+    @media (width < 400px) {
+      font-size: 32px;
+    }
+  }
+  .max-mobile\:leading-\[10px\] {
+    @media (width < 400px) {
+      --tw-leading: 10px;
+      line-height: 10px;
+    }
+  }
+  .max-mobile\:leading-\[12px\] {
+    @media (width < 400px) {
+      --tw-leading: 12px;
+      line-height: 12px;
+    }
+  }
+  .max-mobile\:leading-\[15px\] {
+    @media (width < 400px) {
+      --tw-leading: 15px;
+      line-height: 15px;
+    }
+  }
+  .max-mobile\:leading-\[20px\] {
+    @media (width < 400px) {
+      --tw-leading: 20px;
+      line-height: 20px;
+    }
+  }
+  .max-mobile\:leading-\[52px\] {
+    @media (width < 400px) {
+      --tw-leading: 52px;
+      line-height: 52px;
     }
   }
   .max-md\:my-\[20px\] {
